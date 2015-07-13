@@ -11,6 +11,9 @@
     "angular-ui-utils": "~0.1.1",
     "angular-ui-router": "~0.2.10",
     "angular-file-upload": "~1.1.5",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "fontawesome": "~4.3.0",
+    "jquery": "~2.1.4",
+    "ngFitText": "~3.3.3"
   }
 }

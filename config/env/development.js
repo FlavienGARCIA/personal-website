@@ -1,9 +1,10 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/personal-website-dev',
+	db: process.env.MONGOLAB_URI,
+	// db: 'mongodb://localhost/personal-website-dev',
 	app: {
-		title: 'personal-website - Development Environment'
+		title: 'Flavien GARCIA - Site personnel - DEV'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',

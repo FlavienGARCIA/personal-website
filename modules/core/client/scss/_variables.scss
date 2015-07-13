@@ -1,4 +1,7 @@
-$main-color: #eceff1;
-$title-color: #546e7a;
-$anchor-color: #90a4ae; 
-$body-color: #263238;
+@import "color";
+
+$main-color: color("blue-grey", "lighten-5");
+$title-color: color("blue-grey", "darken-1");
+$anchor-color: color("blue-grey", "lighten-2"); 
+$body-color: color("blue-grey", "darken-4");
+$secondary-color: color("amber", "darken-3");

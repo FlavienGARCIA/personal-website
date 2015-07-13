@@ -4,16 +4,19 @@ module.exports = {
 	client: {
 		lib: {
 			css: [
-				'public/lib/normalize.css/normalize.css'
+				'public/lib/normalize.css/normalize.css',
+				'public/lib/fontawesome/css/font-awesome.css'
 			],
 			js: [
+				'public/lib/jquery/dist/jquery.js',
 				'public/lib/angular/angular.js',
 				'public/lib/angular-resource/angular-resource.js',
 				'public/lib/angular-animate/angular-animate.js',
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
-				'public/lib/angular-file-upload/angular-file-upload.js'
+				'public/lib/angular-file-upload/angular-file-upload.js',
+				'public/lib/ngFitText/src/ng-FitText.js'
 			],
 			tests: ['public/lib/angular-mocks/angular-mocks.js']
 		},
