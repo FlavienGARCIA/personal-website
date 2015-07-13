@@ -15,5 +15,8 @@
     "fontawesome": "~4.3.0",
     "jquery": "~2.1.4",
     "ngFitText": "~3.3.3"
+  },
+  "resolutions": {
+    "angular": ">= 1.0.8"
   }
 }
