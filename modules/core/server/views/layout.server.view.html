@@ -37,7 +37,8 @@
 
 	<!-- Fav Icon -->
 	<link href="/modules/core/img/brand/favicon.ico" rel="shortcut icon" type="image/x-icon">
-
+	
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Hind:300,400,700' rel='stylesheet' type='text/css'>
 	<!--Application CSS Files-->
 	{% for cssFile in cssFiles %}<link rel="stylesheet" href="{{cssFile}}">{% endfor %}
 
@@ -47,13 +48,10 @@
 	<![endif]-->
 </head>
 
-<body class="ng-cloak">
-	<!-- <header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header> -->
-	<section class="content">
-		<section class="container">
-			{% block content %}{% endblock %}
-		</section>
-	</section>
+<body class="ng-cloak" data-ng-controller="HomeController">
+	<aside data-ng-include="'/modules/core/views/sidebar.client.view.html'" class="sidebar"></aside>
+	<section ng-include="'/modules/core/views/presentation.client.view.html'" class="presentation"></section>
+	<section ng-include="'/modules/core/views/projects.client.view.html'" class="projects"></section>
 
 	<!--Embedding The User Object-->
 	<script type="text/javascript">

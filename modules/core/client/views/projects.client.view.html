@@ -1,0 +1,39 @@
+<h3>Mes projets</h3>
+<ul class="tabs cf">
+	<li ng-click="tab = 1" ng-class="{'active': tab === 1}">
+		<h4>Universol.fr</h4>
+		<span class="subtitle">Site de vente en ligne Magento</span>
+	</li>
+	<li ng-click="tab = 2" ng-class="{'active': tab === 2}">
+		<h4>Gestionnaire de cibles</h4>
+		<span class="subtitle">Application de gestion pour tireur sportif</span>
+	</li>
+	<li ng-click="tab = 3" ng-class="{'active': tab === 3}">
+		<h4>Construire une piscine naturelle</h4>
+		<span class="subtitle">Site de présentation et de vente d'un ebook</span>
+	</li>
+</ul>
+
+<section class="universol sub-section active" ng-show="tab === 1">
+	<p>Pendant 2 ans, j'ai occupé le poste de développeur web et d'infographiste dans la société spécialisé dans la vente de tapis <a href="http://gecdiffusion.com/">GEC Diffusion</a>. J'y ai créé et entretenu un site de vente en ligne sous Magento dans l'objectif d'étendre le marché de l'entreprise sur internet.</p>
+	<p>Mon rôle était d'apporter une autonomie à l'équipe dans le développement du site et sa présentation visuelle.</p>
+	<p>J'y ai réalisé diverses tâches :</p>
+	<ul>
+	    <li>Mise en place du CMS Magento (avec migration des clients et produits depuis l'ancien site Prestashop)</li>
+	    <li>Développement en VBA de tableaux Excel complexes permettant la gestion et la création des produits en format compatible Magento</li>
+	    <li>Réalisation de thèmes entièrements personnalisés, responsives et intuitifs (avec notamment jQuery et le framework <a href="http://materializecss.com/">MaterializeCSS</a>)</li>
+	    <li>Réalisation de mises en ambiances des produits dans des environnements 3D mettant en valeur les tapis :
+			<ul>
+			    <li>Prise de photo sur fond vert avec DSLR Canon 70D & objectif Sigma 18-35mm</li>
+			    <li>Sous 3D Studio Max et avec Vray, rendu de scènes 3D (<a href="http://www.evermotion.org/modelshop/show_category/archinteriors/104">Evermotion Archinteriors</a>). Ajustement de l'environnement et des caméras pour correspondre à la photo prise</li>
+			    <li>Composition sous Adobe After Effects et Photoshop</li>
+			</ul>
+	    </li>
+	</ul>
+</section>
+<section class="universol sub-section active" ng-show="tab === 2">
+	<p>Application MEAN.JS de gestion de cibles pour tireur sportif.</p>
+</section>
+<section class="universol sub-section active" ng-show="tab === 3">
+	<p>Mon tout premier site, créé en 2011. Refonte en cours de réalisation.</p>
+</section>

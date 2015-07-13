@@ -1,0 +1,62 @@
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  color: #90a4ae;
+  text-decoration: none; }
+
+body {
+  font-family: 'Hind', serif;
+  color: #eceff1;
+  background-color: #263238; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #546e7a; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #546e7a; }
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1em;
+  line-height: 81px;
+  margin: 0.67em 0px; }
+
+h4 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: 0; }
+
+p, ul {
+  line-height: 1.4em; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+.sidebar, .presentation, .projects {
+  float: left;
+  height: 100vh;
+  padding: 0 20px;
+  /*box-shadow: -50px 0 50px rgba(0, 0, 0, .1);*/ }
+
+.sidebar, .presentation {
+  width: 20%; }
+
+.projects {
+  width: 60%; }

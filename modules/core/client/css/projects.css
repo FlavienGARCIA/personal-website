@@ -1,0 +1,29 @@
+.tabs {
+  margin-bottom: 0; }
+  .tabs li {
+    float: left;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s; }
+    .tabs li:hover {
+      background-color: rgba(0, 0, 0, 0.075); }
+    .tabs li.active {
+      background-color: rgba(0, 0, 0, 0.2);
+      cursor: default; }
+  .tabs .subtitle {
+    color: #c0cad1; }
+
+.sub-section {
+  padding: 5px 15px 0; }
+  .sub-section p, .sub-section ul {
+    margin: 0;
+    padding: 8px 0; }
+  .sub-section ul {
+    padding-left: 20px; }
+  .sub-section.active {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 3px 3px; }
