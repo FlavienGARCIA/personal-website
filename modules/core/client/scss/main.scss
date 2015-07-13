@@ -23,7 +23,7 @@ a {
 body {
 	font-family: 'Hind', serif;
 	color: $main-color;
-	background-color: $body-color;
+	background: $body-color;
 	margin: 2%;
 }
 
@@ -63,7 +63,7 @@ ul {
 
 .sidebar, .presentation, .projects {
 	float: left;
-	height: 100%;
+	height: 100vh;
 	/*box-shadow: -50px 0 50px rgba(0, 0, 0, .1);*/
 }
 
