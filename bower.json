@@ -14,7 +14,8 @@
     "normalize.css": "~3.0.3",
     "fontawesome": "~4.3.0",
     "jquery": "~2.1.4",
-    "ngFitText": "~3.3.3"
+    "ngFitText": "~3.3.3",
+    "angular-translate": "~2.7.2"
   },
   "resolutions": {
     "angular": ">= 1.0.8"

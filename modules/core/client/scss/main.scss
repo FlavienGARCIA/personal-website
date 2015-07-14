@@ -5,7 +5,7 @@
 	color: $secondary-color;
 }
 
-.sidebar, .presentation, .projects {
+.sidebar, .bio, .projects {
 	float: left;
 	padding: 5%;
 }
@@ -15,7 +15,7 @@
 }
 
 @media screen and (min-width: $small-screen) {
-	.sidebar, .presentation, .projects {
+	.sidebar, .bio, .projects {
 		width: 50%;
 	}
 
@@ -40,7 +40,7 @@
 		background-color: transparent;
 	}
 
-	.presentation {
+	.bio {
 		width: 21%;
 		padding: 1.5% 2%;
 	}
@@ -99,6 +99,21 @@
 		&:hover {
 			background-color: $anchor-color;
 			color: $body-color;
+		}
+
+		&.dark {
+			border-color: $title-color;
+			color: $title-color;
+
+			&.active {
+				background-color: $title-color;
+				color: $darken-body;
+			}
+
+			&:hover {
+				background-color: $title-color;
+				color: $darken-body;
+			}
 		}
 	}
 

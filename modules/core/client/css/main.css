@@ -1622,7 +1622,7 @@
   margin-bottom: 30px;
   color: #ff8f00; }
 
-.sidebar, .presentation, .projects {
+.sidebar, .bio, .projects {
   float: left;
   padding: 5%; }
 
@@ -1630,7 +1630,7 @@
   background-color: #1e272c; }
 
 @media screen and (min-width: 640px) {
-  .sidebar, .presentation, .projects {
+  .sidebar, .bio, .projects {
     width: 50%; }
   .projects {
     width: 100%; } }
@@ -1640,7 +1640,7 @@
     width: 19%;
     padding: 1.5%;
     background-color: transparent; }
-  .presentation {
+  .bio {
     width: 21%;
     padding: 1.5% 2%; }
   .projects {
@@ -1683,6 +1683,15 @@
     .btn.btn-blue:hover {
       background-color: #90a4ae;
       color: #263238; }
+    .btn.btn-blue.dark {
+      border-color: #546e7a;
+      color: #546e7a; }
+      .btn.btn-blue.dark.active {
+        background-color: #546e7a;
+        color: #1e272c; }
+      .btn.btn-blue.dark:hover {
+        background-color: #546e7a;
+        color: #1e272c; }
   @media screen and (min-width: 640px) {
     .btn {
       width: auto; } }

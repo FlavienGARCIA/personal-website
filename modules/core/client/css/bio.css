@@ -1618,41 +1618,18 @@
 .transparent-text {
   color: transparent !important; }
 
-.presentation {
-  /*h5 {
-		color: $darken-body;
-		padding-bottom: 10px;
-		padding: 12px 16px;
-		background: $title-color;
-	}
+.bio p {
+  text-align: justify; }
 
-	.skill {
-		border-radius: 3px;
-		margin: 0 0 16px 0;
-		border: 1px solid $title-color;
-	}
+.bio .separator {
+  margin: 20px 0; }
 
-	ul {
-		margin: 0;
-		padding: 12px 16px;
-
-		li {
-			
-		}
-	}*/ }
-  .presentation p {
-    text-align: justify; }
-  .presentation .separator {
-    margin: 20px 0; }
-  .presentation ul li {
-    padding: 6px 12px;
-    background-color: #1e272c;
-    color: #90a4ae;
-    border-radius: 3px;
-    display: inline-block;
-    margin: 0 3px 6px 0;
-    /*border: 1px solid $darken-body;*/ }
-    .presentation ul li.highlight {
-      /*background-color: $secondary-color;*/
-      color: #ff8f00;
-      /*border-color: $secondary-color;*/ }
+.bio ul li {
+  padding: 6px 12px;
+  background-color: #1e272c;
+  color: #90a4ae;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 3px 6px 0; }
+  .bio ul li.highlight {
+    color: #ff8f00; }
