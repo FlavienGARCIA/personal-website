@@ -1647,13 +1647,24 @@ body {
   color: #eceff1;
   font-weight: 400; }
 
-@media screen and (min-width: 1500px) {
+.inner {
+  position: relative; }
+
+@media screen and (min-width: 768px) {
   body {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1e272c), color-stop(19%, #1e272c), color-stop(19%, #263238), color-stop(100%, #263238));
-    background-image: -webkit-linear-gradient(left, #1e272c, #1e272c 19%, #263238 19%, #263238 100%);
-    background-image: -moz-linear-gradient(left, #1e272c, #1e272c 19%, #263238 19%, #263238 100%);
-    background-image: -ms-linear-gradient(left, #1e272c, #1e272c 19%, #263238 19%, #263238 100%);
-    background-image: -o-linear-gradient(left, #1e272c, #1e272c 19%, #263238 19%, #263238 100%); } }
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1e272c), color-stop(50%, #1e272c), color-stop(50%, #263238), color-stop(100%, #263238));
+    background-image: -webkit-linear-gradient(left, #1e272c, #1e272c 50%, #263238 50%, #263238 100%);
+    background-image: -moz-linear-gradient(left, #1e272c, #1e272c 50%, #263238 50%, #263238 100%);
+    background-image: -ms-linear-gradient(left, #1e272c, #1e272c 50%, #263238 50%, #263238 100%);
+    background-image: -o-linear-gradient(left, #1e272c, #1e272c 50%, #263238 50%, #263238 100%); } }
+
+@media screen and (min-width: 1600px) {
+  body {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1e272c), color-stop(22%, #1e272c), color-stop(22%, #263238), color-stop(100%, #263238));
+    background-image: -webkit-linear-gradient(left, #1e272c, #1e272c 22%, #263238 22%, #263238 100%);
+    background-image: -moz-linear-gradient(left, #1e272c, #1e272c 22%, #263238 22%, #263238 100%);
+    background-image: -ms-linear-gradient(left, #1e272c, #1e272c 22%, #263238 22%, #263238 100%);
+    background-image: -o-linear-gradient(left, #1e272c, #1e272c 22%, #263238 22%, #263238 100%); } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;

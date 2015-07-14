@@ -1,65 +1,67 @@
 <h2 class="subheader">Mes projets</h2>
-<ul class="tabs cf">
-	<li ng-click="tab = 1" ng-class="{'active': tab === 1}">
-		<h4>Universol</h4>
-		<span class="subtitle">Site de vente en ligne Magento</span>
-	</li>
-	<li ng-click="tab = 2" ng-class="{'active': tab === 2}">
-		<h4>Gestionnaire de cibles</h4>
-		<span class="subtitle">Application de gestion pour tireur sportif</span>
-	</li>
-	<li ng-click="tab = 3" ng-class="{'active': tab === 3}">
-		<h4>Construire une piscine naturelle</h4>
-		<span class="subtitle">Site de présentation et de vente d'un ebook</span>
-	</li>
-</ul>
+<div class="inner">
+	<ul class="tabs cf">
+		<li ng-click="tab = 1" ng-class="{'active': tab === 1}">
+			<h4>Universol</h4>
+			<span class="subtitle">Site de vente en ligne Magento</span>
+		</li>
+		<li ng-click="tab = 2" ng-class="{'active': tab === 2}">
+			<h4>Gestionnaire de cibles</h4>
+			<span class="subtitle">Application de gestion pour tireur sportif</span>
+		</li>
+		<li ng-click="tab = 3" ng-class="{'active': tab === 3}">
+			<h4>Construire une piscine naturelle</h4>
+			<span class="subtitle">Site de présentation et de vente d'un ebook</span>
+		</li>
+	</ul>
 
-<section class="universol sub-section" ng-show="tab === 1">
-	<p>Pendant 2 ans, j'ai occupé le poste de développeur web et d'infographiste dans la société spécialisé dans la vente de tapis <a href="http://gecdiffusion.com/">GEC Diffusion</a>.<br>J'y ai créé et entretenu un site de vente en ligne sous Magento dans l'objectif d'étendre le marché de l'entreprise sur internet.</p>
-	<p>Mon rôle était d'apporter une autonomie à l'équipe dans le développement du site et sa présentation visuelle.</p>
-	<p>J'y ai réalisé diverses tâches :</p>
-	<ul>
-	    <li>Mise en place du CMS Magento (avec migration des clients et produits depuis l'ancien site Prestashop),</li>
-	    <li>Développement en VBA de tableaux Excel complexes permettant la gestion et la création des produits en format compatible Magento,</li>
-	    <li>Réalisation de thèmes personnalisés, responsives et intuitifs (notamment avec jQuery et le framework <a href="http://materializecss.com/">MaterializeCSS</a>),</li>
-	    <li>Réalisation de mises en ambiances des produits dans des environnements 3D mettant en valeur les tapis :
-			<ul>
-			    <li>Prise de photo sur fond vert avec DSLR Canon 70D & objectif Sigma 18-35mm,</li>
-			    <li>Rendu de scènes 3D sous 3D Studio Max et Vray (<a href="http://www.evermotion.org/modelshop/show_category/archinteriors/104">Evermotion Archinteriors</a>),</li>
-			    <li>Ajustement de l'environnement et des caméras pour correspondre à la photo prise,</li>
-			    <li>Composition sous Adobe After Effects et Photoshop.</li>
-			</ul>
-	    </li>
-	</ul>
-	<p class="cf">
-		<a href="http://universol.fr/" class="btn" target="_blank"><span>Visiter le site</span><i class="fa fa-external-link fa-lg"></i></a>
-		
-	</p>
-</section>
-<section class="universol sub-section" ng-show="tab === 2">
-	<p class="text-muted">En cours de réalisation. Date de fin estimée : août 2015.</p>
-	<p>Pratiquant le tir sportif dans mon temps libre, j'avais besoin d'une application dans laquelle je pouvais enregistrer mes cibles et voir l'évolution de mes scores.</p>
-	<p>J'avais également besoin d'apprendre et m'entraîner à utiliser <strong>Node.js</strong> et <strong>MEAN.JS</strong>, ainsi que leurs frameworks et outils (NPM, Bower, Gulp, Yeoman, AngularJS, MongoDB & Mongoose, ExpressJS, Bootstrap, etc).</p>
-	<p>J'ai donc commencé à réaliser cette application dont les fonctionnalitées seraient :</p>
-	<ul>
-	    <li>Interface de création de cible avec upload de photo pour alignement des impacts</li>
-	    <li>A la création, choix du calibre, arme, munitions, distance et type de cible</li>
-	    <li>Calcul du score et des statistiques de la cible</li>
-	    <li>Historique des cibles</li>
-	    <li>Statistiques avec graphiques (scores globaux, progrès)</li>
-	    <li>Génération de PDF (cible une à une ou liste par plage de dates)</li>
-	    <li>Comptes utilisateurs</li>
-	    <li>Tableau de bord avec accès rapide aux fonctionnalitées</li>
-	</ul>
-	<p class="cf">
-		<a href="https://targets-manager.herokuapp.com/" class="btn mr5" target="_blank"><span>Visiter le site</span><i class="fa fa-external-link fa-lg"></i></a>
-		<a href="https://github.com/FlavienGARCIA/targets-manager" class="btn btn-blue" target="_blank"><span>Git repo</span><i class="fa fa-github fa-lg"></i></a>
-	</p>
-</section>
-<section class="universol sub-section" ng-show="tab === 3">
-	<p class="text-muted">Refonte en cours de réalisation. Date de fin estimée : septembre 2015.</p>
-	<p>Mon premier site, créé en 2011 avec le CMS Drupal.</p>
-	<p class="cf">
-		<a href="http://construire-une-piscine-naturelle.com/" class="btn mr5" target="_blank"><span>Visiter le site</span><i class="fa fa-external-link fa-lg"></i></a>
-	</p>
-</section>
+	<section class="universol sub-section" ng-show="tab === 1">
+		<p>Pendant 2 ans, j'ai occupé le poste de développeur web et d'infographiste dans la société spécialisé dans la vente de tapis <a href="http://gecdiffusion.com/">GEC Diffusion</a>.<br>J'y ai créé et entretenu un site de vente en ligne sous Magento dans l'objectif d'étendre le marché de l'entreprise sur internet.</p>
+		<p>Mon rôle était d'apporter une autonomie à l'équipe dans le développement du site et sa présentation visuelle.</p>
+		<p>J'y ai réalisé diverses tâches :</p>
+		<ul>
+		    <li>Mise en place du CMS Magento (avec migration des clients et produits depuis l'ancien site Prestashop)</li>
+		    <li>Réalisation de thèmes personnalisés, responsives et intuitifs (notamment avec jQuery et le framework <a href="http://materializecss.com/">MaterializeCSS</a>)</li>
+		    <li>Développement en VBA de tableaux Excel complexes permettant la gestion et la création des produits en format compatible Magento</li>
+		    <li>Réalisation de mises en ambiances des produits dans des environnements 3D mettant en valeur les tapis :
+				<ul>
+				    <li>Prise de photo sur fond vert avec DSLR Canon 70D & objectif Sigma 18-35mm</li>
+				    <li>Rendu de scènes 3D sous 3D Studio Max et Vray (<a href="http://www.evermotion.org/modelshop/show_category/archinteriors/104">Evermotion Archinteriors</a>)</li>
+				    <li>Ajustement de l'environnement et des caméras pour correspondre à la photo prise</li>
+				    <li>Composition sous Adobe After Effects et Photoshop</li>
+				</ul>
+		    </li>
+		</ul>
+		<p class="cf">
+			<a href="http://universol.fr/" class="btn" target="_blank"><span>Visiter le site</span><i class="fa fa-external-link fa-lg"></i></a>
+			
+		</p>
+	</section>
+	<section class="universol sub-section" ng-show="tab === 2">
+		<p class="text-muted">En cours de réalisation. Date de fin estimée : août 2015.</p>
+		<p>Pratiquant le tir sportif dans mon temps libre, j'avais besoin d'une application dans laquelle je pouvais enregistrer mes cibles et voir l'évolution de mes scores.</p>
+		<p>J'avais également besoin d'apprendre et m'entraîner à utiliser <strong>Node.js</strong> et <strong>MEAN.JS</strong>, ainsi que leurs frameworks et outils (NPM, Bower, Gulp, Yeoman, AngularJS, MongoDB & Mongoose, ExpressJS, Bootstrap, etc).</p>
+		<p>J'ai donc commencé à réaliser cette application dont les fonctionnalitées seraient :</p>
+		<ul>
+		    <li>Interface de création de cible avec upload de photo pour alignement des impacts</li>
+		    <li>A la création, choix du calibre, arme, munitions, distance et type de cible</li>
+		    <li>Calcul du score et des statistiques de la cible</li>
+		    <li>Historique des cibles</li>
+		    <li>Statistiques avec graphiques (scores globaux, progrès)</li>
+		    <li>Génération de PDF (cible une à une ou liste par plage de dates)</li>
+		    <li>Comptes utilisateurs</li>
+		    <li>Tableau de bord avec accès rapide aux fonctionnalitées</li>
+		</ul>
+		<p class="cf">
+			<a href="https://targets-manager.herokuapp.com/" class="btn mr5" target="_blank"><span>Visiter le site</span><i class="fa fa-external-link fa-lg"></i></a>
+			<a href="https://github.com/FlavienGARCIA/targets-manager" class="btn btn-blue" target="_blank"><span>Git repo</span><i class="fa fa-github fa-lg"></i></a>
+		</p>
+	</section>
+	<section class="universol sub-section" ng-show="tab === 3">
+		<p class="text-muted">Refonte en cours de réalisation. Date de fin estimée : septembre 2015.</p>
+		<p>Mon premier site, créé en 2011 avec le CMS Drupal.</p>
+		<p class="cf">
+			<a href="http://construire-une-piscine-naturelle.com/" class="btn mr5" target="_blank"><span>Visiter le site</span><i class="fa fa-external-link fa-lg"></i></a>
+		</p>
+	</section>
+</div>

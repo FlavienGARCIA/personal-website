@@ -1619,33 +1619,35 @@
   color: transparent !important; }
 
 .subheader {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   color: #ff8f00; }
 
 .sidebar, .bio, .projects {
   float: left;
-  padding: 5%; }
+  padding: 5%;
+  width: 100%; }
 
 .sidebar {
   background-color: #1e272c; }
 
-@media screen and (min-width: 640px) {
-  .sidebar, .bio, .projects {
+@media screen and (min-width: 768px) {
+  .sidebar, .bio {
     width: 50%; }
   .projects {
-    width: 100%; } }
+    background-color: #263238;
+    border-top: 3px solid #1e272c; } }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
   .sidebar {
-    width: 19%;
-    padding: 1.5%;
-    background-color: transparent; }
+    width: 22%;
+    padding: 2%; }
   .bio {
-    width: 21%;
-    padding: 1.5% 2%; }
+    width: 22%;
+    padding: 2% 3%; }
   .projects {
-    width: 60%;
-    padding: 1.5% 1.5% 1.5% 0; } }
+    width: 56%;
+    padding: 2% 2% 2% 0;
+    border-top: none; } }
 
 .btn {
   padding: 8px 16px;
@@ -1692,7 +1694,7 @@
       .btn.btn-blue.dark:hover {
         background-color: #546e7a;
         color: #1e272c; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 768px) {
     .btn {
       width: auto; } }
 

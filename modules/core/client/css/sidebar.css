@@ -1627,10 +1627,10 @@
     margin-top: 0;
     margin-bottom: 10px; }
   .sidebar .links {
-    margin: 0;
+    margin: 25px 0 0 0;
     text-align: center; }
     .sidebar .links li a {
       width: 100%; }
-      @media screen and (min-width: 640px) {
+      @media screen and (min-width: 768px) {
         .sidebar .links li a {
           width: auto; } }

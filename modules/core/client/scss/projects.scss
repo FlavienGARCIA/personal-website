@@ -2,10 +2,47 @@
 
 .tabs {
 	margin-bottom: -5px;
-	position: relative;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	border-radius: 4px 4px 0 0;
+	
+	&:before, &:after {
+		content:'';
+		width: 10%;
+		height: 80px;
+		position: absolute;
+		top: 0;
+		pointer-events: none;
+		background: $body-color;
+		z-index: 2;
+	}
+
+	&:before {
+		right: 0;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#263238+0,263238+100&0+0,1+100 */
+		background: -moz-linear-gradient(left, rgba(38,50,56,0) 0%, rgba(38,50,56,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(38,50,56,0)), color-stop(100%,rgba(38,50,56,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, rgba(38,50,56,0) 0%,rgba(38,50,56,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left, rgba(38,50,56,0) 0%,rgba(38,50,56,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left, rgba(38,50,56,0) 0%,rgba(38,50,56,1) 100%); /* IE10+ */
+		background: linear-gradient(to right, rgba(38,50,56,0) 0%,rgba(38,50,56,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00263238', endColorstr='#263238',GradientType=1 ); /* IE6-9 */
+	}
+
+	&:after {
+		left: 0;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#263238+0,263238+100&1+0,0+100 */
+		background: -moz-linear-gradient(left, rgba(38,50,56,1) 0%, rgba(38,50,56,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(38,50,56,1)), color-stop(100%,rgba(38,50,56,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, rgba(38,50,56,1) 0%,rgba(38,50,56,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left, rgba(38,50,56,1) 0%,rgba(38,50,56,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left, rgba(38,50,56,1) 0%,rgba(38,50,56,0) 100%); /* IE10+ */
+		background: linear-gradient(to right, rgba(38,50,56,1) 0%,rgba(38,50,56,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#263238', endColorstr='#00263238',GradientType=1 ); /* IE6-9 */
+	}
 
 	li {
-		float: left;
 		padding: 12px 20px;
 		margin-right: 5px;
 		border-radius: 4px;
@@ -15,7 +52,7 @@
 		transition: all .1s;
 		position: relative;
 		z-index: 1;
-		width: 100%;
+		display: inline-block;
 
 		&:hover {
 			background-color: darken($body-color, 2%);
@@ -24,16 +61,11 @@
 		&.active {
 			background-color: $darken-body;
 			cursor: default;
+			z-index: 3;
 
 			h4 {
 				color: $secondary-color;
 			}
-		}
-	}
-
-	@media screen and (min-width: $small-screen) {
-		li {
-			width: auto;
 		}
 	}
 

@@ -35,42 +35,87 @@ body {
 	
 }
 
+.inner {
+	position: relative;
+}
+
+@media screen and (min-width: $small-screen) {
+	body {
+		background-image: -webkit-gradient(linear,
+	    left top,
+	    right top,
+	    color-stop(0, $darken-body),
+	    color-stop(50%, $darken-body),
+	    color-stop(50%, $body-color),
+	    color-stop(100%, $body-color)
+		);
+	  background-image: -webkit-linear-gradient(
+	    left,
+	    $darken-body,
+	    $darken-body 50%,
+	    $body-color 50%,
+	    $body-color 100%
+		);
+	  background-image: -moz-linear-gradient(
+	    left,
+	    $darken-body,
+	    $darken-body 50%,
+	    $body-color 50%,
+	    $body-color 100%
+		);
+	  background-image: -ms-linear-gradient(
+	    left,
+	    $darken-body,
+	    $darken-body 50%,
+	    $body-color 50%,
+	    $body-color 100%
+		);
+	  background-image: -o-linear-gradient(
+	    left,
+	    $darken-body,
+	    $darken-body 50%,
+	    $body-color 50%,
+	    $body-color 100%
+		);
+	}
+}
+
 @media screen and (min-width: $very-large-screen) {
 	body {
 		background-image: -webkit-gradient(linear,
 	    left top,
 	    right top,
 	    color-stop(0, $darken-body),
-	    color-stop(19%, $darken-body),
-	    color-stop(19%, $body-color),
+	    color-stop(22%, $darken-body),
+	    color-stop(22%, $body-color),
 	    color-stop(100%, $body-color)
 		);
 	  background-image: -webkit-linear-gradient(
 	    left,
 	    $darken-body,
-	    $darken-body 19%,
-	    $body-color 19%,
+	    $darken-body 22%,
+	    $body-color 22%,
 	    $body-color 100%
 		);
 	  background-image: -moz-linear-gradient(
 	    left,
 	    $darken-body,
-	    $darken-body 19%,
-	    $body-color 19%,
+	    $darken-body 22%,
+	    $body-color 22%,
 	    $body-color 100%
 		);
 	  background-image: -ms-linear-gradient(
 	    left,
 	    $darken-body,
-	    $darken-body 19%,
-	    $body-color 19%,
+	    $darken-body 22%,
+	    $body-color 22%,
 	    $body-color 100%
 		);
 	  background-image: -o-linear-gradient(
 	    left,
 	    $darken-body,
-	    $darken-body 19%,
-	    $body-color 19%,
+	    $darken-body 22%,
+	    $body-color 22%,
 	    $body-color 100%
 		);
 	}

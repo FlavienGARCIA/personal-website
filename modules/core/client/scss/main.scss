@@ -1,13 +1,14 @@
 @import "variables";
 
 .subheader {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	color: $secondary-color;
 }
 
 .sidebar, .bio, .projects {
 	float: left;
 	padding: 5%;
+	width: 100%;
 }
 
 .sidebar {
@@ -15,12 +16,17 @@
 }
 
 @media screen and (min-width: $small-screen) {
-	.sidebar, .bio, .projects {
+	.sidebar, .bio {
 		width: 50%;
 	}
 
+	.bio {
+		
+	}
+
 	.projects {
-		width: 100%;
+		background-color: $body-color;
+		border-top: 3px solid $darken-body;
 	}
 }
 
@@ -35,19 +41,19 @@
 @media screen and (min-width: $very-large-screen) {
 
 	.sidebar {
-		width: 19%;
-		padding: 1.5%;
-		background-color: transparent;
+		width: 22%;
+		padding: 2%;
 	}
 
 	.bio {
-		width: 21%;
-		padding: 1.5% 2%;
+		width: 22%;
+		padding: 2% 3%;
 	}
 
 	.projects {
-		width: 60%;
-		padding: 1.5% 1.5% 1.5% 0;
+		width: 56%;
+		padding: 2% 2% 2% 0;
+		border-top: none;
 	}
 }
 
