@@ -1619,7 +1619,8 @@
   color: transparent !important; }
 
 .subheader {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  color: #ff8f00; }
 
 .sidebar, .presentation, .projects {
   float: left;

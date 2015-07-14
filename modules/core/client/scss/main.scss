@@ -2,6 +2,7 @@
 
 .subheader {
 	margin-bottom: 30px;
+	color: $secondary-color;
 }
 
 .sidebar, .presentation, .projects {
@@ -11,14 +12,6 @@
 
 .sidebar {
 	background-color: $darken-body;
-}
-
-.presentation {
-
-}
-
-.projects {
-	
 }
 
 @media screen and (min-width: $small-screen) {
@@ -35,17 +28,11 @@
 	
 }
 
-
 @media screen and (min-width: $large-screen) {
-	.sidebar, .presentation, .projects {
-		
-	}
+	
 }
 
 @media screen and (min-width: $very-large-screen) {
-	.sidebar, .presentation, .projects {
-		
-	}
 
 	.sidebar {
 		width: 19%;
