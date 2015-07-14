@@ -1618,55 +1618,71 @@
 .transparent-text {
   color: transparent !important; }
 
-.sidebar {
-  text-align: justify; }
-  .sidebar h1 {
-    color: #fff;
-    margin-bottom: 0; }
-  .sidebar h2 {
-    margin-top: 0;
-    margin-bottom: 10px; }
-  .sidebar .links {
-    margin: 0; }
-    .sidebar .links li a {
-      width: 100%; }
-      @media screen and (min-width: 640px) {
-        .sidebar .links li a {
-          width: auto; } }
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
 
-/*.email {
-	overflow: hidden;
-	margin-bottom: -7px;
+.cf:after {
+  clear: both; }
 
-	.mail {
-		-webkit-transition: all .1s;
-		-o-transition: all .1s;
-		transition: all .1s;
-		position: relative;
-		bottom: 40px;
-		opacity: 0;
-	}
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-	.text {
-		-webkit-transition: all .1s;
-		-o-transition: all .1s;
-		transition: all .1s;
-		position: absolute;
-		left: 50px;
-		top: 8px;
-	}
+a {
+  color: #ff8f00;
+  text-decoration: none; }
 
-	&:hover {
+body {
+  font-family: 'Hind', sans-serif;
+  background: #263238;
+  color: #eceff1;
+  font-weight: 400; }
 
-		.text {
-			top: 40px;
-			opacity: 0;
-		}
+@media screen and (min-width: 1500px) {
+  body {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #1e272c), color-stop(19%, #1e272c), color-stop(19%, #263238), color-stop(100%, #263238));
+    background-image: -webkit-linear-gradient(left, #1e272c, #1e272c 19%, #263238 19%, #263238 100%);
+    background-image: -moz-linear-gradient(left, #1e272c, #1e272c 19%, #263238 19%, #263238 100%);
+    background-image: -ms-linear-gradient(left, #1e272c, #1e272c 19%, #263238 19%, #263238 100%);
+    background-image: -o-linear-gradient(left, #1e272c, #1e272c 19%, #263238 19%, #263238 100%); } }
 
-		.mail {
-			bottom: 0;
-			opacity: 1;
-		}
-	}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #546e7a;
+  line-height: 1em;
+  margin: 0; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #546e7a; }
 
-}*/
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.25em; }
+
+p, ul {
+  line-height: 1.4em; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+.mt0 {
+  margin-top: 0 !important; }
+
+.mb0 {
+  margin-bottom: 0 !important; }
+
+.text-muted {
+  color: #90a4ae; }

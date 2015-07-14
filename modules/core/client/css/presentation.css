@@ -1618,55 +1618,21 @@
 .transparent-text {
   color: transparent !important; }
 
-.sidebar {
+.presentation p {
   text-align: justify; }
-  .sidebar h1 {
-    color: #fff;
-    margin-bottom: 0; }
-  .sidebar h2 {
-    margin-top: 0;
-    margin-bottom: 10px; }
-  .sidebar .links {
-    margin: 0; }
-    .sidebar .links li a {
-      width: 100%; }
-      @media screen and (min-width: 640px) {
-        .sidebar .links li a {
-          width: auto; } }
 
-/*.email {
-	overflow: hidden;
-	margin-bottom: -7px;
+.presentation h5 {
+  color: #1e272c;
+  padding-bottom: 10px;
+  padding: 12px 16px;
+  background: #546e7a; }
 
-	.mail {
-		-webkit-transition: all .1s;
-		-o-transition: all .1s;
-		transition: all .1s;
-		position: relative;
-		bottom: 40px;
-		opacity: 0;
-	}
+.presentation .skill {
+  /*padding: 12px 16px;*/
+  border-radius: 3px;
+  margin: 0 0 16px 0;
+  border: 1px solid #546e7a; }
 
-	.text {
-		-webkit-transition: all .1s;
-		-o-transition: all .1s;
-		transition: all .1s;
-		position: absolute;
-		left: 50px;
-		top: 8px;
-	}
-
-	&:hover {
-
-		.text {
-			top: 40px;
-			opacity: 0;
-		}
-
-		.mail {
-			bottom: 0;
-			opacity: 1;
-		}
-	}
-
-}*/
+.presentation ul {
+  margin: 0;
+  padding: 12px 16px; }

@@ -1,0 +1,119 @@
+@import "variables";
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: $secondary-color;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Hind', sans-serif;
+	background: $body-color;
+	color: $main-color;
+	font-weight: 400;
+	
+}
+
+@media screen and (min-width: $very-large-screen) {
+	body {
+		background-image: -webkit-gradient(linear,
+	    left top,
+	    right top,
+	    color-stop(0, $darken-body),
+	    color-stop(19%, $darken-body),
+	    color-stop(19%, $body-color),
+	    color-stop(100%, $body-color)
+		);
+	  background-image: -webkit-linear-gradient(
+	    left,
+	    $darken-body,
+	    $darken-body 19%,
+	    $body-color 19%,
+	    $body-color 100%
+		);
+	  background-image: -moz-linear-gradient(
+	    left,
+	    $darken-body,
+	    $darken-body 19%,
+	    $body-color 19%,
+	    $body-color 100%
+		);
+	  background-image: -ms-linear-gradient(
+	    left,
+	    $darken-body,
+	    $darken-body 19%,
+	    $body-color 19%,
+	    $body-color 100%
+		);
+	  background-image: -o-linear-gradient(
+	    left,
+	    $darken-body,
+	    $darken-body 19%,
+	    $body-color 19%,
+	    $body-color 100%
+		);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: $title-color;
+	line-height: 1em;
+	margin: 0;
+
+	a {
+		color: $title-color;
+	}
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+p, ul {
+	line-height: 1.4em;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.mt0 {
+	margin-top: 0 !important;
+}
+
+.mb0 {
+	margin-bottom: 0 !important;
+}
+
+.text-muted {
+	color: $anchor-color;
+}

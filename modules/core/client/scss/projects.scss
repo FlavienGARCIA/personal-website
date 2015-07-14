@@ -1,41 +1,39 @@
 @import "variables";
 
-.subheader {
-
-	font-size: 1.75em;
-	line-height: 1em;
-	line-height: 81px;
-	margin-top: 0;
-	margin-bottom: 10px;
-}
-
 .tabs {
 	margin-bottom: -5px;
 	position: relative;
 
 	li {
 		float: left;
-		padding: 10px 15px;
+		padding: 12px 20px;
 		margin-right: 5px;
-		border-radius: 4px 4px 0 0;
+		border-radius: 4px;
 		cursor: pointer;
 		-webkit-transition: all .1s;
 		-o-transition: all .1s;
 		transition: all .1s;
 		position: relative;
 		z-index: 1;
+		width: 100%;
 
 		&:hover {
 			background-color: darken($body-color, 2%);
 		}
 
 		&.active {
-			background-color: darken($body-color, 4%);
+			background-color: $darken-body;
 			cursor: default;
 
 			h4 {
 				color: $secondary-color;
 			}
+		}
+	}
+
+	@media screen and (min-width: $small-screen) {
+		li {
+			width: auto;
 		}
 	}
 
@@ -46,8 +44,8 @@
 
 
 .sub-section {
-	padding: 5px 15px;
-	background-color: darken($body-color, 4%);
+	padding: 10px 20px;
+	background-color: $darken-body;
 	border-radius: 4px;
 	position: relative;
 	z-index: 2;

@@ -1,6 +1,8 @@
 @import "variables";
 
 .sidebar {
+	text-align: justify;
+
 	h1 {
 		color: #fff;
 		margin-bottom: 0;
@@ -13,10 +15,18 @@
 
 	.links {
 		margin: 0;
+
+		li a {
+			width: 100%;
+
+			@media screen and (min-width: $small-screen) {
+				width: auto;
+			}
+		}
 	}
 }
 
-.email {
+/*.email {
 	overflow: hidden;
 	margin-bottom: -7px;
 
@@ -51,4 +61,4 @@
 		}
 	}
 
-}
+}*/

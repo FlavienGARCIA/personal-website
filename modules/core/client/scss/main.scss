@@ -1,79 +1,67 @@
 @import "variables";
 
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-* {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-a {
-	color: $secondary-color;
-	text-decoration: none;
-}
-
-body {
-	font-family: 'Hind', serif;
-	color: $main-color;
-	background: $body-color;
-	margin: 2%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	color: $title-color;
-	line-height: 1em;
-	margin-top: 0;
-
-	a {
-		color: $title-color;
-	}
-}
-
-h2 {
-	font-size: 2em;
-}
-
-h3 {
-	font-size: 1.75em;
-}
-
-h4 {
-	font-size: 1.5em;
-	margin: 0;
-}
-
-p, ul {
-	line-height: 1.4em;
-}
-
-ul {
-	list-style: none;
-	padding-left: 0;
+.subheader {
+	margin-bottom: 25px;
 }
 
 .sidebar, .presentation, .projects {
 	float: left;
-	height: 100vh;
-	/*box-shadow: -50px 0 50px rgba(0, 0, 0, .1);*/
+	padding: 5%;
 }
 
-.sidebar, .presentation {
-	width: 18%;
-	margin-right: 2%;
+.sidebar {
+	background-color: $darken-body;
+}
+
+.presentation {
+
 }
 
 .projects {
-	width: 60%;
+	
+}
+
+@media screen and (min-width: $small-screen) {
+	.sidebar, .presentation, .projects {
+		width: 50%;
+	}
+
+	.projects {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: $medium-screen) {
+	
+}
+
+
+@media screen and (min-width: $large-screen) {
+	.sidebar, .presentation, .projects {
+		
+	}
+}
+
+@media screen and (min-width: $very-large-screen) {
+	.sidebar, .presentation, .projects {
+		
+	}
+
+	.sidebar {
+		width: 19%;
+		padding: 1.5%;
+		background-color: transparent;
+	}
+
+	.presentation {
+		width: 21%;
+		padding: 1.5% 2%;
+	}
+
+	.projects {
+		width: 60%;
+		padding: 1.5% 1.5% 1.5% 0;
+	}
 }
 
 .btn {
@@ -89,6 +77,12 @@ ul {
 	background-color: transparent;
 	color: $secondary-color;
 	position: relative;
+	width: 100%;
+	text-align: center;
+
+	@media screen and (min-width: $small-screen) {
+		width: auto;
+	}
 
 	&.inline {
 		border: none;

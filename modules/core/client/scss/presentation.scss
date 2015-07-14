@@ -1,0 +1,31 @@
+@import "variables";
+
+.presentation {
+	
+	p {
+		text-align: justify;
+	}
+
+	h5 {
+		color: $darken-body;
+		padding-bottom: 10px;
+		padding: 12px 16px;
+		background: $title-color;
+	}
+
+	.skill {
+		/*padding: 12px 16px;*/
+		border-radius: 3px;
+		margin: 0 0 16px 0;
+		border: 1px solid $title-color;
+	}
+
+	ul {
+		margin: 0;
+		padding: 12px 16px;
+
+		li {
+			
+		}
+	}
+}
