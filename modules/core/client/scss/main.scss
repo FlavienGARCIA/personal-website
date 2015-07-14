@@ -1,7 +1,7 @@
 @import "variables";
 
 .subheader {
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 
 .sidebar, .presentation, .projects {
@@ -80,14 +80,14 @@
 	width: 100%;
 	text-align: center;
 
-	@media screen and (min-width: $small-screen) {
-		width: auto;
-	}
-
 	&.inline {
 		border: none;
 		text-transform: none;
 		margin-right: 5px;
+	}
+
+	i + span, span + i {
+		margin-left: 12px;
 	}
 
 	&:hover {
@@ -95,8 +95,28 @@
 		color: $body-color;
 	}
 
-	i + span, span + i {
-		margin-left: 12px;
+	&.active {
+		background-color: $secondary-color;
+		color: $body-color;
+	}
+
+	&.btn-blue {
+		border-color: $anchor-color;
+		color: $anchor-color;
+
+		&.active {
+			background-color: $anchor-color;
+			color: $body-color;
+		}
+
+		&:hover {
+			background-color: $anchor-color;
+			color: $body-color;
+		}
+	}
+
+	@media screen and (min-width: $small-screen) {
+		width: auto;
 	}
 }
 

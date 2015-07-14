@@ -15,6 +15,7 @@
 
 	.links {
 		margin: 0;
+		text-align: center;
 
 		li a {
 			width: 100%;
@@ -25,40 +26,3 @@
 		}
 	}
 }
-
-/*.email {
-	overflow: hidden;
-	margin-bottom: -7px;
-
-	.mail {
-		-webkit-transition: all .1s;
-		-o-transition: all .1s;
-		transition: all .1s;
-		position: relative;
-		bottom: 40px;
-		opacity: 0;
-	}
-
-	.text {
-		-webkit-transition: all .1s;
-		-o-transition: all .1s;
-		transition: all .1s;
-		position: absolute;
-		left: 50px;
-		top: 8px;
-	}
-
-	&:hover {
-
-		.text {
-			top: 40px;
-			opacity: 0;
-		}
-
-		.mail {
-			bottom: 0;
-			opacity: 1;
-		}
-	}
-
-}*/

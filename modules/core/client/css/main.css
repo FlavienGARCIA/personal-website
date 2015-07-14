@@ -1619,7 +1619,7 @@
   color: transparent !important; }
 
 .subheader {
-  margin-bottom: 25px; }
+  margin-bottom: 30px; }
 
 .sidebar, .presentation, .projects {
   float: left;
@@ -1661,18 +1661,30 @@
   position: relative;
   width: 100%;
   text-align: center; }
-  @media screen and (min-width: 640px) {
-    .btn {
-      width: auto; } }
   .btn.inline {
     border: none;
     text-transform: none;
     margin-right: 5px; }
+  .btn i + span, .btn span + i {
+    margin-left: 12px; }
   .btn:hover {
     background-color: #ff8f00;
     color: #263238; }
-  .btn i + span, .btn span + i {
-    margin-left: 12px; }
+  .btn.active {
+    background-color: #ff8f00;
+    color: #263238; }
+  .btn.btn-blue {
+    border-color: #90a4ae;
+    color: #90a4ae; }
+    .btn.btn-blue.active {
+      background-color: #90a4ae;
+      color: #263238; }
+    .btn.btn-blue:hover {
+      background-color: #90a4ae;
+      color: #263238; }
+  @media screen and (min-width: 640px) {
+    .btn {
+      width: auto; } }
 
 .pull-right {
   float: right; }

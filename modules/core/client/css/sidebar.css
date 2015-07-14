@@ -1627,46 +1627,10 @@
     margin-top: 0;
     margin-bottom: 10px; }
   .sidebar .links {
-    margin: 0; }
+    margin: 0;
+    text-align: center; }
     .sidebar .links li a {
       width: 100%; }
       @media screen and (min-width: 640px) {
         .sidebar .links li a {
           width: auto; } }
-
-/*.email {
-	overflow: hidden;
-	margin-bottom: -7px;
-
-	.mail {
-		-webkit-transition: all .1s;
-		-o-transition: all .1s;
-		transition: all .1s;
-		position: relative;
-		bottom: 40px;
-		opacity: 0;
-	}
-
-	.text {
-		-webkit-transition: all .1s;
-		-o-transition: all .1s;
-		transition: all .1s;
-		position: absolute;
-		left: 50px;
-		top: 8px;
-	}
-
-	&:hover {
-
-		.text {
-			top: 40px;
-			opacity: 0;
-		}
-
-		.mail {
-			bottom: 0;
-			opacity: 1;
-		}
-	}
-
-}*/
