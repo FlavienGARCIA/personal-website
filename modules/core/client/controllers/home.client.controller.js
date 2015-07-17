@@ -30,5 +30,13 @@ angular.module('core').controller('HomeController', ['$scope', '$translate',
 				}, 250);
         	}, 100);
         };
+
+        $scope.toggleBodyClass = function() {
+        	if($('body').hasClass('light')) {
+        		$('body').removeClass('light');
+        	} else {
+        		$('body').addClass('light');
+        	}
+        };
 	}
 ]);

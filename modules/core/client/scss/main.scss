@@ -1,38 +1,55 @@
 @import "variables";
 
 .subheader {
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	color: $secondary-color;
+
+	.light & {
+		color: $light-secondary-color;
+	}
 }
 
 .sidebar, .bio, .projects {
 	float: left;
-	padding: 5%;
+	padding: 7%;
 	width: 100%;
 }
 
 .sidebar {
-	background-color: $darken-body;
+	background-color: $darken-body-color;
+
+	.light & {
+		background-color: $light-darken-body-color;
+	}
 }
 
 @media screen and (min-width: $small-screen) {
+	.sidebar, .bio, .projects {
+		padding: 5%;
+	}
+
 	.sidebar, .bio {
 		width: 50%;
 	}
 
-	.bio {
-		
+	.sidebar {
+		background-color: transparent;
 	}
 
 	.projects {
 		background-color: $body-color;
-		border-top: 3px solid $darken-body;
+		border-top: 3px solid $darken-body-color;
+
+		.light & {
+			background-color: $light-body-color;
+			border-color: $light-darken-body-color;
+		}
 	}
 }
 
 @media screen and (min-width: $medium-screen) {
 	
-}
+}	
 
 @media screen and (min-width: $large-screen) {
 	
@@ -60,9 +77,9 @@
 .btn {
 	padding: 8px 16px;
 	border-radius: 3px;
-	-webkit-transition: all .1s;
-	-o-transition: all .1s;
-	transition: all .1s;
+	-webkit-transition: all .15s;
+	-o-transition: all .15s;
+	transition: all .15s;
 	text-transform: uppercase;
 	font-family: "Montserrat", sans-serif;
 	display: inline-block;
@@ -113,12 +130,57 @@
 
 			&.active {
 				background-color: $title-color;
-				color: $darken-body;
+				color: $darken-body-color;
 			}
 
 			&:hover {
 				background-color: $title-color;
-				color: $darken-body;
+				color: $darken-body-color;
+			}
+		}
+	}
+
+	.light & {
+		border-color: $light-secondary-color;
+		color: $light-secondary-color;
+
+		&:hover {
+			background-color: $light-secondary-color;
+			color: $light-body-color;
+		}
+
+		&.active {
+			background-color: $light-secondary-color;
+			color: $light-body-color;
+		}
+
+		&.btn-blue {
+			border-color: $light-anchor-color;
+			color: $light-anchor-color;
+
+			&.active {
+				background-color: $light-anchor-color;
+				color: $light-body-color;
+			}
+
+			&:hover {
+				background-color: $light-anchor-color;
+				color: $light-body-color;
+			}
+
+			&.dark {
+				border-color: $light-title-color;
+				color: $light-title-color;
+
+				&.active {
+					background-color: $light-title-color;
+					color: $light-darken-body-color;
+				}
+
+				&:hover {
+					background-color: $light-title-color;
+					color: $light-darken-body-color;
+				}
 			}
 		}
 	}

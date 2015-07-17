@@ -21,18 +21,57 @@ a {
 	-webkit-transition: all .1s;
 	-o-transition: all .1s;
 	transition: all .1s;
+	outline: none;
+	position: relative;
+
+	&:not(.btn):before {
+		content: '';
+		width: 0;
+		height: 1px;
+		background-color: $anchor-color;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		-webkit-transition: all .15s;
+		-o-transition: all .15s;
+		transition: all .15s;
+
+		&.light & {
+			background-color: $light-anchor-color;
+		}
+	}
 
 	&:hover {
 		color: lighten($anchor-color, 20%);
+
+		&:not(.btn):before {
+			width: 100%;
+		}
+	}
+
+	.light & {
+		color: $light-anchor-color;
+
+		&:hover {
+			color: lighten($light-anchor-color, 20%);
+		}
 	}
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	background: $body-color;
-	color: $main-color;
+ 	color: $main-color;
 	font-weight: 300;
 	font-size: 15px;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+
+	&.light {
+		background: $light-body-color;
+	  	color: $light-main-color;
+	}
 }
 
 .inner {
@@ -42,82 +81,160 @@ body {
 @media screen and (min-width: $small-screen) {
 	body {
 		background-image: -webkit-gradient(linear,
-	    left top,
-	    right top,
-	    color-stop(0, $darken-body),
-	    color-stop(50%, $darken-body),
-	    color-stop(50%, $body-color),
-	    color-stop(100%, $body-color)
+			left top,
+			right top,
+			color-stop(0, $darken-body-color),
+			color-stop(50%, $darken-body-color),
+			color-stop(50%, $body-color),
+			color-stop(100%, $body-color)
 		);
-	  background-image: -webkit-linear-gradient(
-	    left,
-	    $darken-body,
-	    $darken-body 50%,
-	    $body-color 50%,
-	    $body-color 100%
+		background-image: -webkit-linear-gradient(
+			left,
+			$darken-body-color,
+			$darken-body-color 50%,
+			$body-color 50%,
+			$body-color 100%
 		);
-	  background-image: -moz-linear-gradient(
-	    left,
-	    $darken-body,
-	    $darken-body 50%,
-	    $body-color 50%,
-	    $body-color 100%
+		background-image: -moz-linear-gradient(
+			left,
+			$darken-body-color,
+			$darken-body-color 50%,
+			$body-color 50%,
+			$body-color 100%
 		);
-	  background-image: -ms-linear-gradient(
-	    left,
-	    $darken-body,
-	    $darken-body 50%,
-	    $body-color 50%,
-	    $body-color 100%
+		background-image: -ms-linear-gradient(
+			left,
+			$darken-body-color,
+			$darken-body-color 50%,
+			$body-color 50%,
+			$body-color 100%
 		);
-	  background-image: -o-linear-gradient(
-	    left,
-	    $darken-body,
-	    $darken-body 50%,
-	    $body-color 50%,
-	    $body-color 100%
+		background-image: -o-linear-gradient(
+			left,
+			$darken-body-color,
+			$darken-body-color 50%,
+			$body-color 50%,
+			$body-color 100%
 		);
+
+		&.light {
+			background-image: -webkit-gradient(linear,
+			left top,
+				right top,
+				color-stop(0, $light-darken-body-color),
+				color-stop(50%, $light-darken-body-color),
+				color-stop(50%, $light-body-color),
+				color-stop(100%, $light-body-color)
+			);
+			background-image: -webkit-linear-gradient(
+				left,
+				$light-darken-body-color,
+				$light-darken-body-color 50%,
+				$light-body-color 50%,
+				$light-body-color 100%
+			);
+			background-image: -moz-linear-gradient(
+				left,
+				$light-darken-body-color,
+				$light-darken-body-color 50%,
+				$light-body-color 50%,
+				$light-body-color 100%
+			);
+			background-image: -ms-linear-gradient(
+				left,
+				$light-darken-body-color,
+				$light-darken-body-color 50%,
+				$light-body-color 50%,
+				$light-body-color 100%
+			);
+			background-image: -o-linear-gradient(
+				left,
+				$light-darken-body-color,
+				$light-darken-body-color 50%,
+				$light-body-color 50%,
+				$light-body-color 100%
+			);
+		}
 	}
 }
 
 @media screen and (min-width: $very-large-screen) {
 	body {
 		background-image: -webkit-gradient(linear,
-	    left top,
-	    right top,
-	    color-stop(0, $darken-body),
-	    color-stop(22%, $darken-body),
-	    color-stop(22%, $body-color),
-	    color-stop(100%, $body-color)
+			left top,
+			right top,
+			color-stop(0, $darken-body-color),
+			color-stop(22%, $darken-body-color),
+			color-stop(22%, $body-color),
+			color-stop(100%, $body-color)
 		);
-	  background-image: -webkit-linear-gradient(
-	    left,
-	    $darken-body,
-	    $darken-body 22%,
-	    $body-color 22%,
-	    $body-color 100%
+		background-image: -webkit-linear-gradient(
+			left,
+			$darken-body-color,
+			$darken-body-color 22%,
+			$body-color 22%,
+			$body-color 100%
 		);
-	  background-image: -moz-linear-gradient(
-	    left,
-	    $darken-body,
-	    $darken-body 22%,
-	    $body-color 22%,
-	    $body-color 100%
+		background-image: -moz-linear-gradient(
+			left,
+			$darken-body-color,
+			$darken-body-color 22%,
+			$body-color 22%,
+			$body-color 100%
 		);
-	  background-image: -ms-linear-gradient(
-	    left,
-	    $darken-body,
-	    $darken-body 22%,
-	    $body-color 22%,
-	    $body-color 100%
+		background-image: -ms-linear-gradient(
+			left,
+			$darken-body-color,
+			$darken-body-color 22%,
+			$body-color 22%,
+			$body-color 100%
 		);
-	  background-image: -o-linear-gradient(
-	    left,
-	    $darken-body,
-	    $darken-body 22%,
-	    $body-color 22%,
-	    $body-color 100%
+		background-image: -o-linear-gradient(
+			left,
+			$darken-body-color,
+			$darken-body-color 22%,
+			$body-color 22%,
+			$body-color 100%
 		);
+
+		&.light {
+			background-image: -webkit-gradient(linear,
+				left top,
+				right top,
+				color-stop(0, $light-darken-body-color),
+				color-stop(22%, $light-darken-body-color),
+				color-stop(22%, $light-body-color),
+				color-stop(100%, $light-body-color)
+			);
+			background-image: -webkit-linear-gradient(
+				left,
+				$light-darken-body-color,
+				$light-darken-body-color 22%,
+				$light-body-color 22%,
+				$light-body-color 100%
+			);
+			background-image: -moz-linear-gradient(
+				left,
+				$light-darken-body-color,
+				$light-darken-body-color 22%,
+				$light-body-color 22%,
+				$light-body-color 100%
+			);
+			background-image: -ms-linear-gradient(
+				left,
+				$light-darken-body-color,
+				$light-darken-body-color 22%,
+				$light-body-color 22%,
+				$light-body-color 100%
+			);
+			background-image: -o-linear-gradient(
+				left,
+				$light-darken-body-color,
+				$light-darken-body-color 22%,
+				$light-body-color 22%,
+				$light-body-color 100%
+			);
+		}
 	}
 }
 
@@ -127,9 +244,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: $title-color;
 	line-height: 1em;
 	margin: 0;
+	-webkit-transition: color .2S;
+	-o-transition: color .2S;
+	transition: color .2S;
 
-	a {
-		color: $title-color;
+	.light & {
+		color: $light-title-color;
 	}
 }
 
@@ -174,17 +294,31 @@ ul {
 	margin-left: 5px !important;
 }
 
+.mt5 {
+	margin-top: 5px !important;
+}
+
 .mb5 {
 	margin-bottom: 5px !important;
 }
 
+.mb10 {
+	margin-bottom: 10px !important;
+}
+
 .text-muted {
 	color: $anchor-color;
+
+	.light & {
+		color: $light-anchor-color;
+	}
 }
 
 .separator {
 	height: 1px;
 	width: 100%;
+	margin: 10px 0 20px;
+	position: relative;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e272c+0,90a4ae+50,1e272c+100 */
 	background: lighten($body-color, 12%); /* Old browsers */
 	background: -moz-linear-gradient(left, rgba(30, 39, 44, 0) 0%, lighten($body-color, 12%) 50%, rgba(30, 39, 44, 0) 100%); /* FF3.6+ */
@@ -194,8 +328,16 @@ ul {
 	background: -ms-linear-gradient(left, rgba(30, 39, 44, 0) 0%,lighten($body-color, 12%) 50%,rgba(30, 39, 44, 0) 100%); /* IE10+ */
 	background: linear-gradient(to right, rgba(30, 39, 44, 0) 0%,lighten($body-color, 12%) 50%,rgba(30, 39, 44, 0) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e272c', endColorstr='#1e272c',GradientType=1 ); /* IE6-9 */
-	margin: 10px 0 20px;
-	position: relative;
+
+	.light & {
+		background: rgba(120,144,156, 0); /* Old browsers */
+		background: -moz-linear-gradient(left, rgba(120,144,156, 0) 0%, rgba(120,144,156, .5) 50%, rgba(120,144,156, 0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(120,144,156, 0)), color-stop(50%,rgba(120,144,156, 0)), color-stop(100%,rgba(120,144,156, 0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, rgba(120,144,156, 0) 0%,rgba(120,144,156, .5) 50%,rgba(120,144,156, 0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left, rgba(120,144,156, 0) 0%,rgba(120,144,156, .5) 50%,rgba(120,144,156, 0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left, rgba(120,144,156, 0) 0%,rgba(120,144,156, .5) 50%,rgba(120,144,156, 0) 100%); /* IE10+ */
+		background: linear-gradient(to right, rgba(120,144,156, 0) 0%,rgba(120,144,156, .5) 50%,rgba(120,144,156, 0) 100%); /* W3C */
+	}
 }
 
 .inline-block {

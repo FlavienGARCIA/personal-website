@@ -1641,16 +1641,24 @@
     transition: all 0.1s; }
   .tabs li:hover, .section-title .inner:hover {
     background-color: #222d32; }
+    .light .tabs li:hover, .light .section-title .inner:hover {
+      background-color: #e6eaed; }
   .tabs li.active, .section-title .inner.active {
     background-color: #1e272c;
     cursor: default;
     z-index: 3; }
     .tabs li.active h4, .section-title .inner.active h4 {
       color: #ff8f00; }
+    .light .tabs li.active, .light .section-title .inner.active {
+      background-color: #e0e5e8; }
+      .light .tabs li.active h4, .light .section-title .inner.active h4 {
+        color: #ff6f00; }
 
 .subtitle {
   color: #c0cad1;
   font-size: 14px; }
+  .light .subtitle {
+    color: #07090a; }
 
 .section-title .inner {
   border-radius: 4px;
@@ -1659,16 +1667,15 @@
   padding: 12px 20px;
   background-color: #222d32;
   display: block; }
-  .section-title .inner .separator {
-    display: none;
-    margin-bottom: 0; }
   .section-title .inner:hover {
     background-color: #1e272c; }
   .section-title .inner.active {
     border-radius: 4px 4px 0 0;
-    padding-bottom: 0; }
-    .section-title .inner.active .separator {
-      display: block; }
+    padding-bottom: 8px; }
+  .light .section-title .inner {
+    background-color: #e6eaed; }
+    .light .section-title .inner:hover {
+      background-color: #e0e5e8; }
 
 .sub-section {
   padding: 10px 20px;
@@ -1684,12 +1691,12 @@
     list-style-type: disc; }
   .sub-section.active {
     border-radius: 0 0 4px 4px; }
+  .light .sub-section {
+    background-color: #e0e5e8; }
 
 @media screen and (min-width: 768px) {
   .section-title .inner {
-    display: inline-block; }
-  .section-title .separator {
-    display: none; } }
+    display: inline-block; } }
 
 @media screen and (min-width: 1110px) {
   .tabs {

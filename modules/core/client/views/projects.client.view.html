@@ -1,4 +1,4 @@
-<h2 class="subheader">Mes projets</h2>
+<h2 class="subheader" translate="PROJECTS.TITLE"></h2>
 <div class="inner">
 	<ul class="tabs cf" id="projectsTabs">
 		<li ng-click="tab = 1" ng-class="{'active': tab === 1}">
@@ -20,34 +20,32 @@
 			<div class="inner mt0" ng-class="{'active': tab === 1}">
 				<h4 translate="PROJECTS.TITLE_1"></h4>
 				<span class="subtitle" translate="PROJECTS.SUBTITLE_1"></span>
-				<div class="separator"></div>
 			</div>
 		</div>
 		<section class="universol sub-section" ng-show="tab === 1" ng-class="{'active': tab === 1}">
 			<p>Pendant 2 ans, j'ai occupé le poste de développeur web et d'infographiste dans la société spécialisé dans la vente de tapis <a href="http://gecdiffusion.com/">GEC Diffusion</a>.<br>J'y ai créé et entretenu un site de vente en ligne sous Magento dans l'objectif d'étendre le marché de l'entreprise sur internet.</p>
 			<p>J'y ai réalisé diverses tâches :</p>
 			<ul>
-			    <li>Mise en place du CMS Magento (avec migration des clients et produits depuis l'ancien site Prestashop)</li>
-			    <li>Réalisation de thèmes personnalisés, responsives et intuitifs (notamment avec jQuery et le framework <a href="http://materializecss.com/">MaterializeCSS</a>)</li>
-			    <li>Développement en VBA de tableaux Excel complexes permettant la gestion et la création des produits en format compatible Magento</li>
-			    <li>Réalisation de mises en ambiances des produits dans des environnements 3D mettant en valeur les tapis :
+			    <li>Mise en place du CMS Magento (migration des clients et produits depuis l'ancien site Prestashop, installation des modules, etc)</li>
+			    <li>Réalisation complète du thème responsive (CSS 3, jQuery et framework <a href="http://materializecss.com/">MaterializeCSS</a>)</li>
+			    <li>Développement en VBA de tableaux Excel permettant la gestion et la création des produits en format compatible Magento</li>
+			    <li>Réalisation de mises en ambiances des produits dans des environnements 3D :
 					<ul>
 					    <li>Prise de photo sur fond vert avec DSLR Canon 70D & objectif Sigma 18-35mm</li>
-					    <li>Rendu de scènes 3D sous 3D Studio Max et Vray (<a href="http://www.evermotion.org/modelshop/show_category/archinteriors/104">Evermotion Archinteriors</a>)</li>
-					    <li>Ajustement de l'environnement et des caméras pour correspondre à la photo prise</li>
+					    <li>Rendu sous 3D Studio Max et Vray (avec scènes <a href="http://www.evermotion.org/modelshop/show_category/archinteriors/104">Evermotion Archinteriors</a>)</li>
+					    <li>Ajustement de l'environnement et des caméras pour correspondre à la photo</li>
 					    <li>Composition sous Adobe After Effects et Photoshop</li>
 					</ul>
 			    </li> 
 			</ul>
 			<p class="cf">
-				<a href="http://universol.fr/" class="btn" target="_blank"><span>Visiter le site</span><i class="fa fa-external-link fa-lg"></i></a>
+				<a href="http://universol.fr/" class="btn" target="_blank"><span translate="VISIT_LINK"></span><i class="fa fa-external-link fa-lg"></i></a>
 			</p>
 		</section>
 		<div ng-click="setActiveTab(2)" class="section-title title_2">
 			<div class="inner" ng-class="{'active': tab === 2}">
 				<h4 translate="PROJECTS.TITLE_2"></h4>
 				<span class="subtitle" translate="PROJECTS.SUBTITLE_2"></span>
-				<div class="separator"></div>
 			</div>
 		</div>
 		<section class="universol sub-section" ng-show="tab === 2" ng-class="{'active': tab === 2}">
@@ -66,7 +64,7 @@
 			    <li>Tableau de bord avec accès rapide aux fonctionnalitées</li>
 			</ul>
 			<p class="cf btn-group">
-				<a href="https://targets-manager.herokuapp.com/" class="btn mr5" target="_blank"><span>Visiter le site</span><i class="fa fa-external-link fa-lg"></i></a>
+				<a href="https://targets-manager.herokuapp.com/" class="btn mr5" target="_blank"><span translate="VISIT_LINK"></span><i class="fa fa-external-link fa-lg"></i></a>
 				<a href="https://github.com/FlavienGARCIA/targets-manager" class="btn btn-blue mb0" target="_blank"><span>Git repo</span><i class="fa fa-github fa-lg"></i></a>
 			</p>
 		</section>
@@ -74,19 +72,18 @@
 			<div class="inner" ng-class="{'active': tab === 3}">
 				<h4 translate="PROJECTS.TITLE_3"></h4>
 				<span class="subtitle" translate="PROJECTS.SUBTITLE_3"></span>
-				<div class="separator"></div>
 			</div>
 		</div>
 		<section class="universol sub-section" ng-show="tab === 3" ng-class="{'active': tab === 3}">
 			<p class="text-muted">Refonte en cours de réalisation. Date de fin estimée : septembre 2015.</p>
 			<p>Mon premier site, créé en 2011 avec le CMS Drupal.</p>
-			<p>Changements prévues :</p>
+			<p>Changements prévus :</p>
 			<ul>
 			    <li>Migration vers MEAN.JS</li>
 			    <li>Redesign complet (design mono-page)</li>
 			</ul>
 			<p class="cf">
-				<a href="http://construire-une-piscine-naturelle.com/" class="btn mr5" target="_blank"><span>Visiter le site</span><i class="fa fa-external-link fa-lg"></i></a>
+				<a href="http://construire-une-piscine-naturelle.com/" class="btn mr5" target="_blank"><span translate="VISIT_LINK"></span><i class="fa fa-external-link fa-lg"></i></a>
 			</p>
 		</section>
 	</div>

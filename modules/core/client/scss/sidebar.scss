@@ -6,11 +6,21 @@
 	h1 {
 		color: #fff;
 		margin-bottom: 0;
+		-webkit-transition: color .2s;
+		-o-transition: color .2s;
+		transition: color .2s;
+
+		.light & {
+			color: $light-main-color;
+		}
 	}
 
 	h2 {
 		margin-top: 0;
 		margin-bottom: 15px;
+		-webkit-transition: color .2s;
+		-o-transition: color .2s;
+		transition: color .2s;
 	}
 
 	.links {

@@ -1633,3 +1633,8 @@
   margin: 0 3px 6px 0; }
   .bio ul li.highlight {
     color: #ff8f00; }
+  .light .bio ul li {
+    background-color: #e0e5e8;
+    color: #455a64; }
+    .light .bio ul li.highlight {
+      color: #ff6f00; }

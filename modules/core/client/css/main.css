@@ -1619,23 +1619,34 @@
   color: transparent !important; }
 
 .subheader {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   color: #ff8f00; }
+  .light .subheader {
+    color: #ff6f00; }
 
 .sidebar, .bio, .projects {
   float: left;
-  padding: 5%;
+  padding: 7%;
   width: 100%; }
 
 .sidebar {
   background-color: #1e272c; }
+  .light .sidebar {
+    background-color: #e0e5e8; }
 
 @media screen and (min-width: 768px) {
+  .sidebar, .bio, .projects {
+    padding: 5%; }
   .sidebar, .bio {
     width: 50%; }
+  .sidebar {
+    background-color: transparent; }
   .projects {
     background-color: #263238;
-    border-top: 3px solid #1e272c; } }
+    border-top: 3px solid #1e272c; }
+    .light .projects {
+      background-color: #eceff1;
+      border-color: #e0e5e8; } }
 
 @media screen and (min-width: 1600px) {
   .sidebar {
@@ -1652,9 +1663,9 @@
 .btn {
   padding: 8px 16px;
   border-radius: 3px;
-  -webkit-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   display: inline-block;
@@ -1694,6 +1705,33 @@
       .btn.btn-blue.dark:hover {
         background-color: #546e7a;
         color: #1e272c; }
+  .light .btn {
+    border-color: #ff6f00;
+    color: #ff6f00; }
+    .light .btn:hover {
+      background-color: #ff6f00;
+      color: #eceff1; }
+    .light .btn.active {
+      background-color: #ff6f00;
+      color: #eceff1; }
+    .light .btn.btn-blue {
+      border-color: #455a64;
+      color: #455a64; }
+      .light .btn.btn-blue.active {
+        background-color: #455a64;
+        color: #eceff1; }
+      .light .btn.btn-blue:hover {
+        background-color: #455a64;
+        color: #eceff1; }
+      .light .btn.btn-blue.dark {
+        border-color: #78909c;
+        color: #78909c; }
+        .light .btn.btn-blue.dark.active {
+          background-color: #78909c;
+          color: #e0e5e8; }
+        .light .btn.btn-blue.dark:hover {
+          background-color: #78909c;
+          color: #e0e5e8; }
   @media screen and (min-width: 768px) {
     .btn {
       width: auto; } }

@@ -14,7 +14,7 @@
 
 		li {
 			padding: 6px 12px;
-			background-color: $darken-body;
+			background-color: $darken-body-color;
 			color: $anchor-color;
 			border-radius: 3px;
 			display: inline-block;
@@ -22,6 +22,15 @@
 
 			&.highlight {
 				color: $secondary-color;
+			}
+
+			.light & {
+				background-color: $light-darken-body-color;
+				color: $light-anchor-color;
+
+				&.highlight {
+					color: $light-secondary-color;
+				}
 			}
 		}
 	}
