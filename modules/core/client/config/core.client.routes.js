@@ -17,7 +17,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 			SIDEBAR: {
 				TITLE: 'Développeur front-end',
 				FIRST_PARAGRAPH: 'Développeur web spécialisé dans le front-end, j\'utilise HTML 5, CSS 3 et JavaScript pour concevoir des expériences intuitives et dynamiques où l\'expérience utilisateur est toujours une priorité.',
-				SECOND_PARAGRAPH: 'L\'approfondissement continue des mes connaissances et l\'utilisation des dernières et meilleures technologies du web est pour moi un élément essentiel du développement web, et dont je m\'engage à améliorer chaque jour.',
+				SECOND_PARAGRAPH: 'L\'approfondissement continue des mes connaissances et l\'utilisation des dernières technologies du web est pour moi un élément essentiel du développement web, et dont je m\'engage à améliorer chaque jour.',
 				PHONE_BTN: 'Téléphone',
 			},
 			BIO: {
@@ -26,8 +26,17 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				SUBTITLE_1: 'Utilisation avancée',
 				SUBTITLE_2: 'A l\'aise et autonome',
 				SUBTITLE_3: 'Notions avancées',
+				SUBTITLE_4: 'Autres',
 				PHOTO_SKILL: 'Photographie avec DSLR Canon',
 				ENGLISH_SKILL: 'Anglais (lu, écrit et compréhension orale)'
+			},
+			PROJECTS: {
+				TITLE_1: 'Universol',
+				SUBTITLE_1: 'Site e-commerce Magento',
+				TITLE_2: 'Gestionnaire de cibles',
+				SUBTITLE_2: 'Application de gestion de cibles pour tireur sportif',
+				TITLE_3: 'Construire une piscine naturelle',
+				SUBTITLE_3: 'Site de présentation et de vente d\'un ebook'
 			}
 		};
 
@@ -35,7 +44,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 			SIDEBAR: {
 				TITLE: 'Front-end developper',
 				FIRST_PARAGRAPH: 'Web developer specializing in front-end, I use HTML 5, CSS 3 and JavaScript to design intuitive and dynamic experiences, where user experience is always a priority.',
-				SECOND_PARAGRAPH: 'The constant deepening of my knowledge and using the latest and greatest web technologies is for me an essential part of web development, and I am commited to improve them every day.',
+				SECOND_PARAGRAPH: 'The constant deepening of my knowledge and using the latest web technologies is for me an essential part of web development, and I am commited to improve them every day.',
 				PHONE_BTN: 'Phone',
 			},
 			BIO: {
@@ -44,8 +53,17 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				SUBTITLE_1: 'Advanced usage',
 				SUBTITLE_2: 'Comfortable and autonomous',
 				SUBTITLE_3: 'Advanced notions',
+				SUBTITLE_4: 'Others',
 				PHOTO_SKILL: 'Canon DSLR photography',
-				ENGLISH_SKILL: 'English (read, written et oral comprehension)'
+				ENGLISH_SKILL: 'English (reading, writing and listening comprehension)'
+			},
+			PROJECTS: {
+				TITLE_1: 'Universol',
+				SUBTITLE_1: 'Site e-commerce Magento',
+				TITLE_2: 'Gestionnaire de cibles',
+				SUBTITLE_2: 'Application de gestion de cibles pour tireur sportif',
+				TITLE_3: 'Construire une piscine naturelle',
+				SUBTITLE_3: 'Site de présentation et de vente d\'un ebook'
 			}
 		};
 

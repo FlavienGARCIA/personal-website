@@ -1698,6 +1698,10 @@
     .btn {
       width: auto; } }
 
+@media screen and (max-width: 768px) {
+  .btn-group .btn {
+    margin-bottom: 10px; } }
+
 .pull-right {
   float: right; }
 

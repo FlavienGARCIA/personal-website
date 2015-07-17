@@ -1,79 +1,79 @@
 @import "variables";
 
 .tabs {
-	margin-bottom: -5px;
-	white-space: nowrap;
-	overflow-x: auto;
-	overflow-y: hidden;
 	border-radius: 4px 4px 0 0;
-	
-	&:before, &:after {
-		content:'';
-		width: 10%;
-		height: 80px;
-		position: absolute;
-		top: 0;
-		pointer-events: none;
-		background: $body-color;
-		z-index: 2;
-	}
+	margin: 0;
+	margin-bottom: -4px;
+	display: none;
+}
 
-	&:before {
-		right: 0;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#263238+0,263238+100&0+0,1+100 */
-		background: -moz-linear-gradient(left, rgba(38,50,56,0) 0%, rgba(38,50,56,1) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(38,50,56,0)), color-stop(100%,rgba(38,50,56,1))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(left, rgba(38,50,56,0) 0%,rgba(38,50,56,1) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left, rgba(38,50,56,0) 0%,rgba(38,50,56,1) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(left, rgba(38,50,56,0) 0%,rgba(38,50,56,1) 100%); /* IE10+ */
-		background: linear-gradient(to right, rgba(38,50,56,0) 0%,rgba(38,50,56,1) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00263238', endColorstr='#263238',GradientType=1 ); /* IE6-9 */
-	}
+.tabs li, .section-title .inner {
+	padding: 12px 20px;
+	margin-right: 5px;
+	border-radius: 4px 4px 0 0;
+	cursor: pointer;
+	-webkit-transition: all .1s;
+	-o-transition: all .1s;
+	transition: all .1s;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
 
-	&:after {
-		left: 0;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#263238+0,263238+100&1+0,0+100 */
-		background: -moz-linear-gradient(left, rgba(38,50,56,1) 0%, rgba(38,50,56,0) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(38,50,56,1)), color-stop(100%,rgba(38,50,56,0))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(left, rgba(38,50,56,1) 0%,rgba(38,50,56,0) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left, rgba(38,50,56,1) 0%,rgba(38,50,56,0) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(left, rgba(38,50,56,1) 0%,rgba(38,50,56,0) 100%); /* IE10+ */
-		background: linear-gradient(to right, rgba(38,50,56,1) 0%,rgba(38,50,56,0) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#263238', endColorstr='#00263238',GradientType=1 ); /* IE6-9 */
-	}
-
-	li {
-		padding: 12px 20px;
-		margin-right: 5px;
-		border-radius: 4px;
-		cursor: pointer;
+	h4, .subtitle {
 		-webkit-transition: all .1s;
 		-o-transition: all .1s;
 		transition: all .1s;
-		position: relative;
-		z-index: 1;
-		display: inline-block;
-
-		&:hover {
-			background-color: darken($body-color, 2%);
-		}
-
-		&.active {
-			background-color: $darken-body;
-			cursor: default;
-			z-index: 3;
-
-			h4 {
-				color: $secondary-color;
-			}
-		}
 	}
 
-	.subtitle {
-		color: darken($main-color, 15%);
+	&:hover {
+		background-color: darken($body-color, 2%);
+	}
+
+	&.active {
+		background-color: $darken-body;
+		cursor: default;
+		z-index: 3;
+
+		h4 {
+			color: $secondary-color;
+		}
 	}
 }
 
+.subtitle {
+	color: darken($main-color, 15%);
+	font-size: 14px;
+}
+
+.section-title {
+
+	.inner {
+		border-radius: 4px;
+		margin-top: 10px;
+		margin-right: 0;
+		padding: 12px 20px;
+		background-color: darken($body-color, 2%);
+		display: block;
+
+		.separator {
+			display: none;
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			background-color: $darken-body;
+		}
+
+		&.active {
+			border-radius: 4px 4px 0 0;
+			padding-bottom: 0;
+
+			.separator {
+				display: block;
+			}
+		}
+	}
+}
 
 .sub-section {
 	padding: 10px 20px;
@@ -90,5 +90,52 @@
 	ul {
 		padding-left: 20px;
 		list-style-type: disc;
+	}
+
+	&.active {
+		border-radius: 0 0 4px 4px;
+	}
+}
+
+@media screen and (min-width: $small-screen) {
+	.section-title {
+
+		.inner {
+			display: inline-block;
+		}
+		
+		.separator {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 1110px) {
+	.tabs {
+		display: block;
+	}
+
+	.section-title {
+		display: none;
+	}
+}
+
+@media screen and (min-width: $very-large-screen) {
+	.tabs {
+		display: none;
+	}
+
+	.section-title {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1840px) {
+	.tabs {
+		display: block;
+	}
+
+	.section-title {
+		display: none;
 	}
 }

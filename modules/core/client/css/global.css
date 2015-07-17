@@ -1642,10 +1642,11 @@ a {
     color: #cbd4d9; }
 
 body {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #263238;
   color: #eceff1;
-  font-weight: 400; }
+  font-weight: 300;
+  font-size: 15px; }
 
 .inner {
   position: relative; }

@@ -1619,75 +1619,56 @@
   color: transparent !important; }
 
 .tabs {
-  margin-bottom: -5px;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  border-radius: 4px 4px 0 0; }
-  .tabs:before, .tabs:after {
-    content: '';
-    width: 10%;
-    height: 80px;
-    position: absolute;
-    top: 0;
-    pointer-events: none;
-    background: #263238;
-    z-index: 2; }
-  .tabs:before {
-    right: 0;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#263238+0,263238+100&0+0,1+100 */
-    background: -moz-linear-gradient(left, rgba(38, 50, 56, 0) 0%, #263238 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(38, 50, 56, 0)), color-stop(100%, #263238));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(38, 50, 56, 0) 0%, #263238 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, rgba(38, 50, 56, 0) 0%, #263238 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, rgba(38, 50, 56, 0) 0%, #263238 100%);
-    /* IE10+ */
-    background: linear-gradient(to right, rgba(38, 50, 56, 0) 0%, #263238 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00263238', endColorstr='#263238',GradientType=1 );
-    /* IE6-9 */ }
-  .tabs:after {
-    left: 0;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#263238+0,263238+100&1+0,0+100 */
-    background: -moz-linear-gradient(left, #263238 0%, rgba(38, 50, 56, 0) 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #263238), color-stop(100%, rgba(38, 50, 56, 0)));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #263238 0%, rgba(38, 50, 56, 0) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #263238 0%, rgba(38, 50, 56, 0) 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #263238 0%, rgba(38, 50, 56, 0) 100%);
-    /* IE10+ */
-    background: linear-gradient(to right, #263238 0%, rgba(38, 50, 56, 0) 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#263238', endColorstr='#00263238',GradientType=1 );
-    /* IE6-9 */ }
-  .tabs li {
-    padding: 12px 20px;
-    margin-right: 5px;
-    border-radius: 4px;
-    cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+  margin-bottom: -4px;
+  display: none; }
+
+.tabs li, .section-title .inner {
+  padding: 12px 20px;
+  margin-right: 5px;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  position: relative;
+  z-index: 1;
+  display: inline-block; }
+  .tabs li h4, .tabs li .subtitle, .section-title .inner h4, .section-title .inner .subtitle {
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
-    transition: all 0.1s;
-    position: relative;
-    z-index: 1;
-    display: inline-block; }
-    .tabs li:hover {
-      background-color: #222d32; }
-    .tabs li.active {
-      background-color: #1e272c;
-      cursor: default;
-      z-index: 3; }
-      .tabs li.active h4 {
-        color: #ff8f00; }
-  .tabs .subtitle {
-    color: #c0cad1; }
+    transition: all 0.1s; }
+  .tabs li:hover, .section-title .inner:hover {
+    background-color: #222d32; }
+  .tabs li.active, .section-title .inner.active {
+    background-color: #1e272c;
+    cursor: default;
+    z-index: 3; }
+    .tabs li.active h4, .section-title .inner.active h4 {
+      color: #ff8f00; }
+
+.subtitle {
+  color: #c0cad1;
+  font-size: 14px; }
+
+.section-title .inner {
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-right: 0;
+  padding: 12px 20px;
+  background-color: #222d32;
+  display: block; }
+  .section-title .inner .separator {
+    display: none;
+    margin-bottom: 0; }
+  .section-title .inner:hover {
+    background-color: #1e272c; }
+  .section-title .inner.active {
+    border-radius: 4px 4px 0 0;
+    padding-bottom: 0; }
+    .section-title .inner.active .separator {
+      display: block; }
 
 .sub-section {
   padding: 10px 20px;
@@ -1701,3 +1682,29 @@
   .sub-section ul {
     padding-left: 20px;
     list-style-type: disc; }
+  .sub-section.active {
+    border-radius: 0 0 4px 4px; }
+
+@media screen and (min-width: 768px) {
+  .section-title .inner {
+    display: inline-block; }
+  .section-title .separator {
+    display: none; } }
+
+@media screen and (min-width: 1110px) {
+  .tabs {
+    display: block; }
+  .section-title {
+    display: none; } }
+
+@media screen and (min-width: 1600px) {
+  .tabs {
+    display: none; }
+  .section-title {
+    display: block; } }
+
+@media screen and (min-width: 1840px) {
+  .tabs {
+    display: block; }
+  .section-title {
+    display: none; } }

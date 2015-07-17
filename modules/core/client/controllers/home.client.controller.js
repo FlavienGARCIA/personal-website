@@ -2,15 +2,33 @@
 
 angular.module('core').controller('HomeController', ['$scope', '$translate',
 	function($scope, $translate) {
-		// This provides Authentication context.
+
 		$scope.tab = 1;
 
+		$scope.isCurrentLang = function(lang) {
+            return $translate.use() === lang;
+        };
+
 		$scope.changeLanguage = function(key) {
-			$translate.use(key);
+			if(!$scope.isCurrentLang(key)) {
+				$translate.use(key);
+
+				$('html, body').animate({
+					scrollTop: 0
+				}, 250);
+
+				$(window).trigger('resize');
+			}
 		};
 
-		$scope.isCurrentLang = function (lang) {
-            return $translate.use() === lang;
+        $scope.setActiveTab = function(tab) {
+        	$scope.tab = tab;
+
+        	setTimeout(function() {
+				$('html, body').animate({
+					scrollTop: $('.title_' + tab).offset().top + 1
+				}, 250);
+        	}, 100);
         };
 	}
 ]);
