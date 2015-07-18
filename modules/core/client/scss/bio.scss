@@ -1,9 +1,22 @@
 @import "variables";
 
 .bio {
-	
-	p {
+
+	h5 {
+		color: $secondary-color;
+	}
+
+	/*section {
+		width: 24%;
+		padding-right: 1%;
+		display: inline-block;
+	}
+	*/
+	.description {
 		text-align: justify;
+		width: 35%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.separator {
@@ -13,25 +26,12 @@
 	ul {
 
 		li {
-			padding: 6px 12px;
+			/*padding: 6px 12px;
 			background-color: $darken-body-color;
 			color: $anchor-color;
 			border-radius: 3px;
 			display: inline-block;
-			margin: 0 3px 6px 0;
-
-			&.highlight {
-				color: $secondary-color;
-			}
-
-			.light & {
-				background-color: $light-darken-body-color;
-				color: $light-anchor-color;
-
-				&.highlight {
-					color: $light-secondary-color;
-				}
-			}
+			margin: 0 3px 6px 0;*/
 		}
 	}
 }

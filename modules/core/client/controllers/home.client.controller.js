@@ -24,11 +24,11 @@ angular.module('core').controller('HomeController', ['$scope', '$translate',
         $scope.setActiveTab = function(tab) {
         	$scope.tab = tab;
 
-        	setTimeout(function() {
-				$('html, body').animate({
-					scrollTop: $('.title_' + tab).offset().top + 1
-				}, 250);
-        	}, 100);
+    //     	setTimeout(function() {
+				// $('html, body').animate({
+				// 	scrollTop: $('.title_' + tab).offset().top + 1
+				// }, 250);
+    //     	}, 100);
         };
 
         $scope.toggleBodyClass = function() {

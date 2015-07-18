@@ -1618,23 +1618,26 @@
 .transparent-text {
   color: transparent !important; }
 
-.bio p {
-  text-align: justify; }
-
-.bio .separator {
-  margin: 20px 0; }
-
-.bio ul li {
-  padding: 6px 12px;
-  background-color: #1e272c;
-  color: #90a4ae;
-  border-radius: 3px;
-  display: inline-block;
-  margin: 0 3px 6px 0; }
-  .bio ul li.highlight {
+.bio {
+  /*section {
+		width: 24%;
+		padding-right: 1%;
+		display: inline-block;
+	}
+	*/ }
+  .bio h5 {
     color: #ff8f00; }
-  .light .bio ul li {
-    background-color: #e0e5e8;
-    color: #455a64; }
-    .light .bio ul li.highlight {
-      color: #ff6f00; }
+  .bio .description {
+    text-align: justify;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto; }
+  .bio .separator {
+    margin: 20px 0; }
+  .bio ul li {
+    /*padding: 6px 12px;
+			background-color: $darken-body-color;
+			color: $anchor-color;
+			border-radius: 3px;
+			display: inline-block;
+			margin: 0 3px 6px 0;*/ }

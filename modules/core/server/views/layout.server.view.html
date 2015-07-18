@@ -38,7 +38,7 @@
 	<!-- Fav Icon -->
 	<link href="/modules/core/img/brand/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:400,100,200,300,700' rel='stylesheet' type='text/css'>
 	<!--Application CSS Files-->
 	{% for cssFile in cssFiles %}<link rel="stylesheet" href="{{cssFile}}">{% endfor %}
 
@@ -49,9 +49,18 @@
 </head>
 
 <body class="ng-cloak cf" data-ng-controller="HomeController">
-	<aside data-ng-include="'/modules/core/views/sidebar.client.view.html'" class="sidebar"></aside>
-	<section ng-include="'/modules/core/views/bio.client.view.html'" class="bio"></section>
-	<section ng-include="'/modules/core/views/projects.client.view.html'" class="projects"></section>
+	<header data-ng-include="'/modules/core/views/header.client.view.html'" class="sidebar cf"></header>
+	<div class="container">
+		<div class="sub-container" id="projects">
+			<section ng-include="'/modules/core/views/projects.client.view.html'" class="projects"></section>
+		</div>
+		<div class="sub-container" id="bio">
+			<section ng-include="'/modules/core/views/bio.client.view.html'" class="bio"></section>
+		</div>
+		<div class="sub-container" id="contact">
+			<section ng-include="'/modules/core/views/contact.client.view.html'" class="contact"></section>
+		</div>
+	</div>
 
 	<!--Embedding The User Object-->
 	<script type="text/javascript">

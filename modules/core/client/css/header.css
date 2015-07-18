@@ -1618,27 +1618,53 @@
 .transparent-text {
   color: transparent !important; }
 
-.sidebar {
-  text-align: justify; }
-  .sidebar h1 {
+header {
+  background: url(../img/sidebar_bg.jpg) no-repeat top left;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35); }
+  header .title {
+    width: 25%; }
+  header h1 {
     color: #fff;
     margin-bottom: 0;
     -webkit-transition: color 0.2s;
     -o-transition: color 0.2s;
-    transition: color 0.2s; }
-    .light .sidebar h1 {
-      color: #263238; }
-  .sidebar h2 {
+    transition: color 0.2s;
+    font-weight: 200; }
+  header h2 {
     margin-top: 0;
     margin-bottom: 15px;
     -webkit-transition: color 0.2s;
     -o-transition: color 0.2s;
-    transition: color 0.2s; }
-  .sidebar .links {
-    margin: 25px 0 0 0;
-    text-align: center; }
-    .sidebar .links li a {
+    transition: color 0.2s;
+    color: rgba(255, 255, 255, 0.5); }
+  header nav ul {
+    margin: 0; }
+  header nav li {
+    display: inline-block;
+    margin-left: 30px; }
+  header nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    padding: 0 10px; }
+  header .welcome {
+    width: 31%;
+    margin-right: 17%;
+    margin-top: 5%;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif; }
+  header .links {
+    margin: 75px 0 25px;
+    width: 25%;
+    clear: both; }
+    header .links li a {
       width: 100%; }
       @media screen and (min-width: 768px) {
-        .sidebar .links li a {
+        header .links li a {
           width: auto; } }

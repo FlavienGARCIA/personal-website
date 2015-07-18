@@ -1,18 +1,11 @@
 @import "color";
 
-$main-color: color("blue-grey", "lighten-5");
-$body-color: color("blue-grey", "darken-4");
+$main-color: #666;
+$body-color: white;
 $darken-body-color: darken($body-color, 4%);
-$title-color: color("blue-grey", "darken-1");
-$anchor-color: color("blue-grey", "lighten-2"); 
+$title-color: #333;
+$anchor-color: #828282; 
 $secondary-color: color("amber", "darken-3");
-
-$light-main-color: color("blue-grey", "darken-4");
-$light-body-color: color("blue-grey", "lighten-5");
-$light-darken-body-color: darken($light-body-color, 4%);
-$light-title-color: color("blue-grey", "lighten-1");
-$light-anchor-color: color("blue-grey", "darken-2"); 
-$light-secondary-color: color("amber", "darken-4");
 
 $small-screen: 768px;
 $medium-screen: 1024px;

@@ -16,11 +16,12 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 		var translationsFR = {
 			SIDEBAR: {
 				TITLE: 'Développeur front-end',
-				FIRST_PARAGRAPH: 'Développeur web spécialisé dans le front-end, j\'utilise HTML 5, CSS 3 et JavaScript pour concevoir des expériences intuitives et dynamiques où l\'expérience utilisateur est toujours une priorité.',
-				SECOND_PARAGRAPH: 'L\'approfondissement continue des mes connaissances et l\'utilisation des dernières technologies du web est pour moi un élément essentiel du développement web, et que j\'engage à améliorer chaque jour.',
+				FIRST_PARAGRAPH: 'J\’ai 24 ans et je suis un développeur web spécialisé dans le front-end.',
+				SECOND_PARAGRAPH: ' J\'utilise HTML 5, CSS 3 et JavaScript pour concevoir des expériences responsives et dynamiques.',
 				PHONE_BTN: 'Téléphone',
 			},
 			BIO: {
+				TITLE: 'Outils',
 				PARAGRAPH: 'En plus du front-end qui est mon domaine de prédilection, j\'ai également acquis au fil du temps un grand nombre de compétences, allant du back-end à l\'infographie en passant par la création 3D.',
 				SUBTITLE_1: 'Utilisation avancée',
 				SUBTITLE_2: 'A l\'aise et autonome',
@@ -30,13 +31,16 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				ENGLISH_SKILL: 'Anglais (lu, écrit et compréhension orale)'
 			},
 			PROJECTS: {
-				TITLE: 'Mes projets',
+				TITLE: 'Projets',
 				TITLE_1: 'Universol',
-				SUBTITLE_1: 'Site e-commerce Magento',
+				SUBTITLE_1: 'Site de vente de tapis en ligne Magento',
 				TITLE_2: 'Gestionnaire de cibles',
 				SUBTITLE_2: 'Application de gestion de cibles pour tireur sportif',
 				TITLE_3: 'Construire une piscine naturelle',
 				SUBTITLE_3: 'Site de présentation et de vente d\'un ebook'
+			},
+			CONTACT: {
+				TITLE: 'Contact'
 			},
 			VISIT_LINK: 'Visiter le site'
 		};
@@ -49,6 +53,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				PHONE_BTN: 'Phone',
 			},
 			BIO: {
+				TITLE: 'Tools',
 				PARAGRAPH: 'In addition to the front-end which is my field of choice, I also acquired over time a large number of skills, from back-end to computer graphics through 3D creation.',
 				SUBTITLE_1: 'Advanced usage',
 				SUBTITLE_2: 'Comfortable and autonomous',
@@ -58,13 +63,16 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				ENGLISH_SKILL: 'English (reading, writing and listening comprehension)'
 			},
 			PROJECTS: {
-				TITLE: 'My projects',
+				TITLE: 'Projects',
 				TITLE_1: 'Universol',
 				SUBTITLE_1: 'Magento e-commerce website',
 				TITLE_2: 'Targets manager',
 				SUBTITLE_2: 'Management application for sport shooters',
 				TITLE_3: '"Construire une piscine naturelle"',
 				SUBTITLE_3: 'Presentation and sale of an ebook'
+			},
+			CONTACT: {
+				TITLE: 'Contact'
 			},
 			VISIT_LINK: 'Visit website'
 		};

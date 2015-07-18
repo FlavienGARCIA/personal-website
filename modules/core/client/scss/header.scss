@@ -1,0 +1,75 @@
+@import "variables";
+
+header {
+	background: url(../img/sidebar_bg.jpg) no-repeat top left;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	color: #fff;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+
+	.title {
+		width: 25%;
+	}
+
+	h1 {
+		color: #fff;
+		margin-bottom: 0;
+		-webkit-transition: color .2s;
+		-o-transition: color .2s;
+		transition: color .2s;
+		font-weight: 200;
+	}
+
+	h2 {
+		margin-top: 0;
+		margin-bottom: 15px;
+		-webkit-transition: color .2s;
+		-o-transition: color .2s;
+		transition: color .2s;
+		color: rgba(255, 255, 255, .5);
+	}
+
+	nav {
+
+		ul {
+			margin: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin-left: 30px;
+		}
+
+		a {
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 24px;
+			letter-spacing: 4px;
+			font-family: "Raleway", sans-serif;
+			font-weight: 400;
+			padding: 0 10px;
+		}
+	}
+
+	.welcome {
+		width: 31%;
+		margin-right: 17%;
+		margin-top: 5%;
+		font-size: 24px;
+		font-family: "Raleway", sans-serif;
+	}
+
+	.links {
+		margin: 75px 0 25px;
+		width: 25%;
+		clear: both;
+
+		li a {
+			width: 100%;
+
+			@media screen and (min-width: $small-screen) {
+				width: auto;
+			}
+		}
+	}
+}
