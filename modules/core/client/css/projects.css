@@ -1636,13 +1636,13 @@
     font-family: "Raleway", sans-serif; }
 
 .universol .section-title {
-  background: url(../img/universol_2.jpg) no-repeat center 75%;
-  /*background: url(../img/universol_3.jpg) no-repeat center 38%;*/
+  background: url(/modules/core/img/universol_2.jpg) no-repeat center 75%;
+  /*background: url(/modules/core/img/universol_3.jpg) no-repeat center 38%;*/
   -webkit-background-size: cover;
   background-size: cover; }
 
 .piscine .section-title {
-  background: url(../img/piscine.jpg) no-repeat center 65%;
+  background: url(/modules/core/img/piscine.jpg) no-repeat center 65%;
   -webkit-background-size: cover;
   background-size: cover; }
 
