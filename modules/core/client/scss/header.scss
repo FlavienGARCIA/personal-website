@@ -1,5 +1,5 @@
 @import "variables";
-$header-color: "orange";
+
 
 header {
 	padding: 7%;
@@ -13,14 +13,21 @@ header {
 
 @media screen and (min-width: $large-screen) {
 	header {
+		padding: 4% 20%;
+	}
+}
+
+@media screen and (min-width: $very-large-screen) {
+	header {
 		padding: 3% 30%;
 	}
 }
 
 header {
-	/*background-color: color($header-color, "lighten-3");*/
-	background: -webkit-radial-gradient(top, color($header-color, "lighten-3"), color($header-color, "lighten-2"));
-	background: radial-gradient(at top, color($header-color, "lighten-3"), color($header-color, "lighten-2"));
+	background: $main-color;
+	background: -webkit-radial-gradient(center top, color("orange", "lighten-3"), $main-color);
+	background: -moz-radial-gradient(center top, color("orange", "lighten-3"), $main-color);
+	background: radial-gradient(center top, color("orange", "lighten-3"), $main-color);
 	color: #fff;
 
 	h1 {
@@ -37,7 +44,7 @@ header {
 		-webkit-transition: color .2s;
 		-o-transition: color .2s;
 		transition: color .2s;
-		color: color($header-color, "darken-1");
+		color: color("orange", "darken-1");
 		font-weight: 100;
 	}
 
@@ -51,8 +58,8 @@ header {
 		.first-wrapper {
 			margin: 8% 0 2%;
 			border-radius: 4px;
-			color: color($header-color, "lighten-1");
-			background: color($header-color, "lighten-5");
+			color: color("orange", "lighten-1");
+			background: color("orange", "lighten-5");
 			width: 100%;
 			padding: 2% 4% 3%;
 		}

@@ -1627,12 +1627,17 @@ header {
 
 @media screen and (min-width: 1280px) {
   header {
+    padding: 4% 20%; } }
+
+@media screen and (min-width: 1600px) {
+  header {
     padding: 3% 30%; } }
 
 header {
-  /*background-color: color($header-color, "lighten-3");*/
-  background: -webkit-radial-gradient(top, #ffcc80, #ffb74d);
-  background: radial-gradient(at top, #ffcc80, #ffb74d);
+  background: #ffb74d;
+  background: -webkit-radial-gradient(center top, #ffcc80, #ffb74d);
+  background: -moz-radial-gradient(center top, #ffcc80, #ffb74d);
+  background: radial-gradient(center top, #ffcc80, #ffb74d);
   color: #fff; }
   header h1 {
     color: #fff;

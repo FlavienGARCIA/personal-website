@@ -16,9 +16,9 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 		var translationsFR = {
 			SIDEBAR: {
 				TITLE: 'Développeur front-end',
-				FIRST_PARAGRAPH: 'Avec <strong>HTML 5</strong>, <strong>CSS 3</strong> et <strong>JavaScript</strong>,',
+				FIRST_PARAGRAPH: 'Avec HTML 5, CSS 3 et JavaScript,',
 				SECOND_PARAGRAPH: 'je réalise des expériences responsives et dynamiques.',
-				THIRD_PARAGRAPH: 'Passionné et disponible immédiatement.',
+				THIRD_PARAGRAPH: 'Passionné par le web. Disponible immédiatement.',
 				PHONE_BTN: 'Téléphone',
 			},
 			BIO: {
@@ -43,7 +43,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 			CONTACT: {
 				TITLE: 'Contact'
 			},
-			VISIT_LINK: 'Visiter le site'
+			VISIT_LINK: 'Accéder au site'
 		};
 
 		var translationsEN = {
@@ -75,7 +75,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 			CONTACT: {
 				TITLE: 'Contact'
 			},
-			VISIT_LINK: 'Visit website'
+			VISIT_LINK: 'Access website'
 		};
 
 		$translateProvider.translations('fr', translationsFR);

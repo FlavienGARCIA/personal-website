@@ -1,10 +1,6 @@
 @import "color";
 
-$main-color: #666;
-$body-color: white;
-$darken-body-color: darken($body-color, 4%);
-$title-color: #333;
-$anchor-color: #828282; 
+$main-color: color("orange", "lighten-2");
 $secondary-color: color("light-blue", "base");
 
 $small-screen: 768px;

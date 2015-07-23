@@ -16,7 +16,7 @@
 }
 
 a {
-	color: $main-color;
+	color: lighten($secondary-color, 10%);
 	text-decoration: none;
 	-webkit-transition: all .1s;
 	-o-transition: all .1s;
@@ -28,7 +28,7 @@ a {
 		content: '';
 		width: 0;
 		height: 1px;
-		background-color: $anchor-color;
+		background-color: lighten($secondary-color, 10%);
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -38,18 +38,19 @@ a {
 	}
 
 	&:hover {
-		color: lighten($anchor-color, 20%);
+		color: lighten($secondary-color, 20%);
 
-		&:not(.btn):before {
+		&:before {
 			width: 100%;
+			background-color: lighten($secondary-color, 20%);
 		}
 	}
 }
 
 body {
 	font-family: 'Lato', sans-serif;
-	background: $body-color;
- 	color: $main-color;
+	background: white;
+ 	color: #666;
 	font-weight: 300;
 	font-size: 16px;
 	-webkit-transition: all .2s;
@@ -68,8 +69,8 @@ strong {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	color: $title-color;
+	font-weight: 100;
+	color: $main-color;
 	line-height: 1em;
 	margin: 0;
 	-webkit-transition: color .2S;
@@ -79,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 72px;
+	font-size: 70px;
 }
 
 h3 {
@@ -87,11 +88,15 @@ h3 {
 }
 
 h4 {
-	font-size: 48px;
+	font-size: 50px;
 }
 
 h5 {
-	font-size: 36px;
+	font-size: 40px;
+}
+
+h6 {
+	font-size: 30px;
 }
 
 p, ul {
@@ -132,7 +137,7 @@ ul {
 }
 
 .text-muted {
-	color: $anchor-color;
+	color: #AAAAAA;
 }
 
 .separator {

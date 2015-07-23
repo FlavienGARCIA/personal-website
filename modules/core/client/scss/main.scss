@@ -38,9 +38,9 @@
 	text-transform: uppercase;
 	font-family: "Montserrat", sans-serif;
 	display: inline-block;
-	border: 1px solid $secondary-color;
+	border: 1px solid $main-color;
 	background-color: transparent;
-	color: $secondary-color;
+	color: $main-color;
 	position: relative;
 	width: 100%;
 	text-align: center;
@@ -56,42 +56,27 @@
 	}
 
 	&:hover {
-		background-color: $secondary-color;
-		color: $body-color;
+		background-color: $main-color;
+		color: white;
 	}
 
 	&.active {
-		background-color: $secondary-color;
-		color: $body-color;
+		background-color: $main-color;
+		color: white;
 	}
 
 	&.btn-blue {
-		border-color: $anchor-color;
-		color: $anchor-color;
+		border-color: $secondary-color;
+		color: $secondary-color;
 
 		&.active {
-			background-color: $anchor-color;
-			color: $body-color;
+			background-color: $secondary-color;
+			color: white;
 		}
 
 		&:hover {
-			background-color: $anchor-color;
-			color: $body-color;
-		}
-
-		&.dark {
-			border-color: $title-color;
-			color: $title-color;
-
-			&.active {
-				background-color: $title-color;
-				color: $darken-body-color;
-			}
-
-			&:hover {
-				background-color: $title-color;
-				color: $darken-body-color;
-			}
+			background-color: $secondary-color;
+			color: white;
 		}
 	}
 

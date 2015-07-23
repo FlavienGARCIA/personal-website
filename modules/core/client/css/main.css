@@ -1647,9 +1647,9 @@
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   display: inline-block;
-  border: 1px solid #03a9f4;
+  border: 1px solid #ffb74d;
   background-color: transparent;
-  color: #03a9f4;
+  color: #ffb74d;
   position: relative;
   width: 100%;
   text-align: center; }
@@ -1660,29 +1660,20 @@
   .btn i + span, .btn span + i {
     margin-left: 12px; }
   .btn:hover {
-    background-color: #03a9f4;
+    background-color: #ffb74d;
     color: white; }
   .btn.active {
-    background-color: #03a9f4;
+    background-color: #ffb74d;
     color: white; }
   .btn.btn-blue {
-    border-color: #828282;
-    color: #828282; }
+    border-color: #03a9f4;
+    color: #03a9f4; }
     .btn.btn-blue.active {
-      background-color: #828282;
+      background-color: #03a9f4;
       color: white; }
     .btn.btn-blue:hover {
-      background-color: #828282;
+      background-color: #03a9f4;
       color: white; }
-    .btn.btn-blue.dark {
-      border-color: #333;
-      color: #333; }
-      .btn.btn-blue.dark.active {
-        background-color: #333;
-        color: whitesmoke; }
-      .btn.btn-blue.dark:hover {
-        background-color: #333;
-        color: whitesmoke; }
   @media screen and (min-width: 768px) {
     .btn {
       width: auto; } }
