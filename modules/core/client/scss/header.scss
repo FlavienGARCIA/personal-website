@@ -49,10 +49,10 @@ header {
 		}
 
 		.first-wrapper {
-			margin: 8% 0 4%;
+			margin: 8% 0 2%;
 			border-radius: 4px;
-			color: color($header-color, "lighten-2");
-			background: #fff;
+			color: color($header-color, "lighten-1");
+			background: color($header-color, "lighten-5");
 			width: 100%;
 			padding: 2% 4% 3%;
 		}

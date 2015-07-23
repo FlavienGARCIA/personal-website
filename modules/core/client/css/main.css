@@ -1621,8 +1621,7 @@
 .subheader {
   margin-bottom: 3%;
   color: #03a9f4;
-  text-align: center;
-  text-transform: uppercase; }
+  text-align: center; }
 
 .sub-container > section {
   padding: 7%;
