@@ -20,23 +20,5 @@ angular.module('core').controller('HomeController', ['$scope', '$translate',
 				$(window).trigger('resize');
 			}
 		};
-
-        $scope.setActiveTab = function(tab) {
-        	$scope.tab = tab;
-
-    //     	setTimeout(function() {
-				// $('html, body').animate({
-				// 	scrollTop: $('.title_' + tab).offset().top + 1
-				// }, 250);
-    //     	}, 100);
-        };
-
-        $scope.toggleBodyClass = function() {
-        	if($('body').hasClass('light')) {
-        		$('body').removeClass('light');
-        	} else {
-        		$('body').addClass('light');
-        	}
-        };
 	}
 ]);

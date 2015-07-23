@@ -1623,18 +1623,16 @@
   color: #ff8f00;
   text-align: center; }
 
-header, .sub-container > section {
+.sub-container > section {
   padding: 7%;
   width: 100%; }
 
 @media screen and (min-width: 768px) {
-  header, .sub-container > section {
-    padding: 5%; }
-  header {
-    background-color: transparent; } }
+  .sub-container > section {
+    padding: 5%; } }
 
 @media screen and (min-width: 1600px) {
-  header, .sub-container > section {
+  .sub-container > section {
     padding: 2.5% 4%; }
   .sub-container > section {
     max-width: 1280px;

@@ -47,7 +47,7 @@ a {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	background: $body-color;
  	color: $main-color;
 	font-weight: 300;
@@ -63,7 +63,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	color: $title-color;
 	line-height: 1em;
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-transition: color .2S;
 	-o-transition: color .2S;
 	transition: color .2S;
-	font-weight: 300;
+	font-weight: 100;
 }
 
 h2 {
@@ -134,16 +134,15 @@ ul {
 .separator {
 	height: 1px;
 	width: 100%;
-	margin: 10px 0 20px;
 	position: relative;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e272c+0,90a4ae+50,1e272c+100 */
-	background: lighten($body-color, 12%); /* Old browsers */
-	background: -moz-linear-gradient(left, rgba(30, 39, 44, 0) 0%, lighten($body-color, 12%) 50%, rgba(30, 39, 44, 0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(30, 39, 44, 0)), color-stop(50%,lighten($body-color, 12%)), color-stop(100%,rgba(30, 39, 44, 0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, rgba(30, 39, 44, 0) 0%,lighten($body-color, 12%) 50%,rgba(30, 39, 44, 0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, rgba(30, 39, 44, 0) 0%,lighten($body-color, 12%) 50%,rgba(30, 39, 44, 0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, rgba(30, 39, 44, 0) 0%,lighten($body-color, 12%) 50%,rgba(30, 39, 44, 0) 100%); /* IE10+ */
-	background: linear-gradient(to right, rgba(30, 39, 44, 0) 0%,lighten($body-color, 12%) 50%,rgba(30, 39, 44, 0) 100%); /* W3C */
+	background: color("blue", "lighten-4"); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(187, 222, 251, 0) 0%, color("blue", "lighten-4") 50%, rgba(187, 222, 251, 0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(187, 222, 251, 0)), color-stop(50%,color("blue", "lighten-4")), color-stop(100%,rgba(187, 222, 251, 0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(187, 222, 251, 0) 0%,color("blue", "lighten-4") 50%,rgba(187, 222, 251, 0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(187, 222, 251, 0) 0%,color("blue", "lighten-4") 50%,rgba(187, 222, 251, 0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(187, 222, 251, 0) 0%,color("blue", "lighten-4") 50%,rgba(187, 222, 251, 0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(187, 222, 251, 0) 0%,color("blue", "lighten-4") 50%,rgba(187, 222, 251, 0) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e272c', endColorstr='#1e272c',GradientType=1 ); /* IE6-9 */
 }
 

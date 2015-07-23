@@ -6,7 +6,7 @@
 	text-align: center;
 }
 
-header, .sub-container > section {
+.sub-container > section {
 	padding: 7%;
 	width: 100%;
 }
@@ -16,18 +16,14 @@ header, .sub-container > section {
 }
 
 @media screen and (min-width: $small-screen) {
-	header, .sub-container > section {
+	.sub-container > section {
 		padding: 5%;
-	}
-
-	header {
-		background-color: transparent;
 	}
 }
 
 @media screen and (min-width: $very-large-screen) {
 
-	header, .sub-container > section {
+	.sub-container > section {
 		padding: 2.5% 4%;
 	}
 
