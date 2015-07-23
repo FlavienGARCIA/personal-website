@@ -17,8 +17,8 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 			SIDEBAR: {
 				TITLE: 'Développeur front-end',
 				FIRST_PARAGRAPH: 'Je suis passionné par le web.',
-				SECOND_PARAGRAPH: 'J\'utilise <strong>HTML 5</strong>, <strong>CSS 3</strong> et <strong>JavaScript</strong>',
-				THIRD_PARAGRAPH: 'pour concevoir des expériences responsives et dynamiques.',
+				SECOND_PARAGRAPH: 'Avec <strong>HTML 5</strong>, <strong>CSS 3</strong> et <strong>JavaScript</strong>,',
+				THIRD_PARAGRAPH: 'je réalise des expériences responsives et dynamiques.',
 				PHONE_BTN: 'Téléphone',
 			},
 			BIO: {
@@ -32,9 +32,9 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				ENGLISH_SKILL: 'Anglais (lu, écrit et compréhension orale)'
 			},
 			PROJECTS: {
-				TITLE: 'Projets',
+				TITLE: 'Mes projets',
 				TITLE_1: 'Universol',
-				SUBTITLE_1: 'Site de vente de tapis en ligne Magento',
+				SUBTITLE_1: 'Site e-commerce Magento',
 				TITLE_2: 'Gestionnaire de cibles',
 				SUBTITLE_2: 'Application de gestion de cibles pour tireur sportif',
 				TITLE_3: 'Construire une piscine naturelle',
@@ -64,7 +64,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				ENGLISH_SKILL: 'English (reading, writing and listening comprehension)'
 			},
 			PROJECTS: {
-				TITLE: 'Projects',
+				TITLE: 'My projects',
 				TITLE_1: 'Universol',
 				SUBTITLE_1: 'Magento e-commerce website',
 				TITLE_2: 'Targets manager',

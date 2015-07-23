@@ -1619,9 +1619,10 @@
   color: transparent !important; }
 
 .subheader {
-  margin-bottom: 5%;
-  color: #ff8f00;
-  text-align: center; }
+  margin-bottom: 3%;
+  color: #03a9f4;
+  text-align: center;
+  text-transform: uppercase; }
 
 .sub-container > section {
   padding: 7%;
@@ -1647,9 +1648,9 @@
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   display: inline-block;
-  border: 1px solid #ff8f00;
+  border: 1px solid #03a9f4;
   background-color: transparent;
-  color: #ff8f00;
+  color: #03a9f4;
   position: relative;
   width: 100%;
   text-align: center; }
@@ -1660,10 +1661,10 @@
   .btn i + span, .btn span + i {
     margin-left: 12px; }
   .btn:hover {
-    background-color: #ff8f00;
+    background-color: #03a9f4;
     color: white; }
   .btn.active {
-    background-color: #ff8f00;
+    background-color: #03a9f4;
     color: white; }
   .btn.btn-blue {
     border-color: #828282;

@@ -1619,18 +1619,20 @@
   color: transparent !important; }
 
 header {
-  padding: 5% 7%; }
+  padding: 7%; }
 
 @media screen and (min-width: 768px) {
   header {
-    padding: 4% 20%; } }
+    padding: 5% 20%; } }
 
 @media screen and (min-width: 1280px) {
   header {
     padding: 3% 30%; } }
 
 header {
-  background-color: #90CAF9;
+  /*background-color: color($header-color, "lighten-3");*/
+  background: -webkit-radial-gradient(top, #ffcc80, #ffb74d);
+  background: radial-gradient(at top, #ffcc80, #ffb74d);
   color: #fff; }
   header h1 {
     color: #fff;
@@ -1644,7 +1646,7 @@ header {
     -webkit-transition: color 0.2s;
     -o-transition: color 0.2s;
     transition: color 0.2s;
-    color: #42A5F5;
+    color: #fb8c00;
     font-weight: 100; }
   header nav ul {
     margin: 0; }
@@ -1664,12 +1666,13 @@ header {
   header .welcome .first-wrapper {
     margin: 8% 0 4%;
     border-radius: 4px;
-    color: #90CAF9;
+    color: #ffb74d;
     background: #fff;
     width: 100%;
     padding: 2% 4% 3%; }
   header .welcome .first {
-    /*color: $secondary-color;*/ }
+    /*color: $secondary-color;*/
+    font-weight: 300; }
   header .welcome .second, header .welcome .third {
     font-weight: 300; }
     header .welcome .second strong, header .welcome .third strong {

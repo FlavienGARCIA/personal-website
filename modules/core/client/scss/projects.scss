@@ -8,33 +8,83 @@
 
 .section-title {
 	text-align: center;
-	padding: 150px 5%;
 	background: $secondary-color;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .35), 0 2px 5px rgba(0, 0, 0, .2);
+
+	a {
+		color: #fff;
+
+		&:before {
+			background-color: #fff;
+			width: 100%;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, .15), 0 2px 5px rgba(0, 0, 0, .2);
+		}
+	}
 
 	h4 {
-		font-size: 60px;
 		color: #fff;
 	}
 
-	.subtitle {
+	.inner {
+		background-color: rgba(3, 169, 244, .5);
+		padding: 65px 0 50px;
 		color: #fff;
-		font-size: 24px;
-		font-family: "Raleway", sans-serif;
+		font-size: 28px;
+
+		.separator {
+			margin: 5% auto 0 auto;
+		}
+
+		.top {
+			width: 33%;
+			margin: 0 auto;
+		}
+
+		.bottom {
+			width: 50%;
+			margin: 0 auto;
+		}
 	}
 }
 
 .universol .section-title {
-	background: url(/modules/core/img/universol_2.jpg) no-repeat center 75%;
+	background: url(/modules/core/img/universol1.jpg) no-repeat center 75%;
+	/*background: url(/modules/core/img/universol_2.jpg) no-repeat center 75%;*/
 	/*background: url(/modules/core/img/universol_3.jpg) no-repeat center 38%;*/
 	-webkit-background-size: cover;
 	background-size: cover;
+
+	.inner {
+		/*background-color: rgba(233, 30, 99, .5);*/
+
+		.separator {
+			margin-top: 10%;
+		}
+
+		.top {
+			width: 20%;
+		}
+	}
 }
 
 .piscine .section-title {
-	background: url(/modules/core/img/piscine.jpg) no-repeat center 65%;
+	background: url(/modules/core/img/piscine1.jpg) no-repeat center 65%;
 	-webkit-background-size: cover;
 	background-size: cover;
+
+	.inner {
+		background-color: rgba(76, 175, 80, .5);
+	}
+}
+
+.targets .section-title {
+	background: url(/modules/core/img/tir_bg2.jpg) no-repeat center 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	.inner {
+		background-color: rgba(103, 58, 183, .5);
+	}
 }
 
 .section-content {

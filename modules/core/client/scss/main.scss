@@ -1,18 +1,15 @@
 @import "variables";
 
 .subheader {
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 	color: $secondary-color;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .sub-container > section {
 	padding: 7%;
 	width: 100%;
-}
-
-.sub-container {
-
 }
 
 @media screen and (min-width: $small-screen) {

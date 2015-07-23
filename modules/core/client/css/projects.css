@@ -1624,27 +1624,56 @@
 
 .section-title {
   text-align: center;
-  padding: 150px 5%;
-  background: #ff8f00;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
-  .section-title h4 {
-    font-size: 60px;
+  background: #03a9f4;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35), 0 2px 5px rgba(0, 0, 0, 0.2); }
+  .section-title a {
     color: #fff; }
-  .section-title .subtitle {
+    .section-title a:before {
+      background-color: #fff;
+      width: 100%;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.2); }
+  .section-title h4 {
+    color: #fff; }
+  .section-title .inner {
+    background-color: rgba(3, 169, 244, 0.5);
+    padding: 65px 0 50px;
     color: #fff;
-    font-size: 24px;
-    font-family: "Raleway", sans-serif; }
+    font-size: 28px; }
+    .section-title .inner .separator {
+      margin: 5% auto 0 auto; }
+    .section-title .inner .top {
+      width: 33%;
+      margin: 0 auto; }
+    .section-title .inner .bottom {
+      width: 50%;
+      margin: 0 auto; }
 
 .universol .section-title {
-  background: url(/modules/core/img/universol_2.jpg) no-repeat center 75%;
+  background: url(/modules/core/img/universol1.jpg) no-repeat center 75%;
+  /*background: url(/modules/core/img/universol_2.jpg) no-repeat center 75%;*/
   /*background: url(/modules/core/img/universol_3.jpg) no-repeat center 38%;*/
   -webkit-background-size: cover;
   background-size: cover; }
+  .universol .section-title .inner {
+    /*background-color: rgba(233, 30, 99, .5);*/ }
+    .universol .section-title .inner .separator {
+      margin-top: 10%; }
+    .universol .section-title .inner .top {
+      width: 20%; }
 
 .piscine .section-title {
-  background: url(/modules/core/img/piscine.jpg) no-repeat center 65%;
+  background: url(/modules/core/img/piscine1.jpg) no-repeat center 65%;
   -webkit-background-size: cover;
   background-size: cover; }
+  .piscine .section-title .inner {
+    background-color: rgba(76, 175, 80, 0.5); }
+
+.targets .section-title {
+  background: url(/modules/core/img/tir_bg2.jpg) no-repeat center 50%;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .targets .section-title .inner {
+    background-color: rgba(103, 58, 183, 0.5); }
 
 .section-content {
   max-width: 1280px;
