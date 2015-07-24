@@ -1618,11 +1618,6 @@
 .transparent-text {
   color: transparent !important; }
 
-.subheader {
-  margin: 0 0 3%;
-  color: #03a9f4;
-  text-align: center; }
-
 .btn {
   padding: 16px 32px;
   border-radius: 3px;

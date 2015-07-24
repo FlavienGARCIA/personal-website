@@ -2,17 +2,57 @@
 
 .bio {
 	padding: 7%;
+
+	h2 {
+		margin: 0 0 30px;
+		text-align: center;
+		font-size: 50px;
+		color: $secondary-color;
+
+		@media screen and (min-width: $small-screen) {
+			font-size: 70px;
+			margin: 0 0 40px;
+		}
+	}
+
+	section {
+		width: 100%;
+		padding-bottom: 5%;
+	}
 }
 
 @media screen and (min-width: $small-screen) {
 	.bio {
 		padding: 5%;
+
+		section {
+			width: 50%;
+			padding: 0 2.5% 2.5%;
+		}
+	}
+}
+
+@media screen and (min-width: $medium-screen) {
+	.bio {
+
+		.description {
+			width: 75%;
+		}
 	}
 }
 
 @media screen and (min-width: $large-screen) {
 	.bio {
 		padding: 4%;
+
+		.description {
+			width: 50%;
+		}
+
+		section {
+			width: 33%;
+			padding: 0 2.5%;
+		}
 	}
 }
 
@@ -24,25 +64,19 @@
 
 .bio {
 	background-color: color("light-blue", "lighten-5");
-	background: -webkit-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 7%), color("light-blue", "lighten-5"));
-	background: -moz-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 7%), color("light-blue", "lighten-5"));
-	background: radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 7%), color("light-blue", "lighten-5"));
+	background: -webkit-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 5%), color("light-blue", "lighten-5"));
+	background: -moz-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 5%), color("light-blue", "lighten-5"));
+	background: radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 5%), color("light-blue", "lighten-5"));
 
 	.description {
 		text-align: center;
 		font-size: 24px;
-		width: 50%;
 		margin: 0 auto 60px;
 	}
 
 	.skills-wrap {
 		max-width: 1280px;
 		margin: 0 auto;
-	}
-
-	section {
-		width: 33%;
-		padding-right: 3%;
 	}
 	
 	h6 {

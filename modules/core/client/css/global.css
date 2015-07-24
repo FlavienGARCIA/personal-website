@@ -1755,3 +1755,11 @@ ul {
 
 .inline-block {
   display: inline-block !important; }
+
+[animate-in-view] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s; }
+  [animate-in-view].show {
+    opacity: 1;
+    transform: translateY(0); }

@@ -1620,14 +1620,38 @@
 
 .bio {
   padding: 7%; }
+  .bio h2 {
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 50px;
+    color: #03a9f4; }
+    @media screen and (min-width: 768px) {
+      .bio h2 {
+        font-size: 70px;
+        margin: 0 0 40px; } }
+  .bio section {
+    width: 100%;
+    padding-bottom: 5%; }
 
 @media screen and (min-width: 768px) {
   .bio {
-    padding: 5%; } }
+    padding: 5%; }
+    .bio section {
+      width: 50%;
+      padding: 0 2.5% 2.5%; } }
+
+@media screen and (min-width: 1024px) {
+  .bio .description {
+    width: 75%; } }
 
 @media screen and (min-width: 1280px) {
   .bio {
-    padding: 4%; } }
+    padding: 4%; }
+    .bio .description {
+      width: 50%; }
+    .bio section {
+      width: 33%;
+      padding: 0 2.5%; } }
 
 @media screen and (min-width: 1600px) {
   .bio {
@@ -1635,20 +1659,16 @@
 
 .bio {
   background-color: #e1f5fe;
-  background: -webkit-radial-gradient(center top, white, #e1f5fe);
-  background: -moz-radial-gradient(center top, white, #e1f5fe);
-  background: radial-gradient(center top, white, #e1f5fe); }
+  background: -webkit-radial-gradient(center top, #fafdff, #e1f5fe);
+  background: -moz-radial-gradient(center top, #fafdff, #e1f5fe);
+  background: radial-gradient(center top, #fafdff, #e1f5fe); }
   .bio .description {
     text-align: center;
     font-size: 24px;
-    width: 50%;
     margin: 0 auto 60px; }
   .bio .skills-wrap {
     max-width: 1280px;
     margin: 0 auto; }
-  .bio section {
-    width: 33%;
-    padding-right: 3%; }
   .bio h6 {
     color: #03a9f4;
     margin-bottom: 5px;

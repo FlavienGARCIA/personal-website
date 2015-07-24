@@ -1,11 +1,20 @@
 @import "variables";
 
 .projects {
-	padding-top: 5%;
+	
+	h2 {
+		margin: 60px 0 30px;
+		text-align: center;
+		font-size: 50px;
+
+		@media screen and (min-width: $small-screen) {
+			font-size: 70px;
+			margin: 80px 0 40px;
+		}
+	}
 }
 
 .section-title {
-	text-align: center;
 	background: $secondary-color;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, .35), 0 2px 5px rgba(0, 0, 0, .2);
 
@@ -21,32 +30,68 @@
 
 	h4 {
 		color: #fff;
-		font-size: 70px;
+		line-height: 45px;
+		margin-bottom: 5px;
 	}
 
 	.inner {
-		background-color: rgba(3, 169, 244, .4);
-		padding: 75px 0 60px;
+		background-color: rgba(3, 169, 244, .5);
+		padding: 7%;
 		color: #fff;
-		font-size: 24px;
+		font-size: 20px;
 
 		.separator {
 			margin: 30px auto 0;
-			width: 50%;
 			opacity: .5;
 		}
 
 		.top {
-			width: 100%;
+			text-align: center;
 		}
 
 		.bottom {
-			width: 50%;
 			margin: 0 auto;
 		}
 
 		.subtitle {
 			color: #fff;
+		}
+	}
+
+	@media screen and (min-width: $small-screen) {
+		.inner {
+			padding: 5%;
+		}
+	}
+
+	@media screen and (min-width: $medium-screen) {
+		h4 {
+			font-size: 70px;
+			line-height: 70px;
+			margin-bottom: 0;
+		}
+
+		.inner {
+			.bottom {
+				width: 75%;
+			}
+		}
+	}
+
+	@media screen and (min-width: $large-screen) {
+		.inner {
+			padding: 4%;
+			font-size: 24px;
+
+			.bottom {
+				width: 50%;
+			}
+		}
+	}
+
+	@media screen and (min-width: $very-large-screen) {
+		.inner {
+			padding: 3%;
 		}
 	}
 }
@@ -89,7 +134,6 @@
 		max-width: 1280px;
 		margin: 0 auto;
 		padding: 7%;
-
 
 		@media screen and (min-width: $small-screen) {
 			padding: 5%;

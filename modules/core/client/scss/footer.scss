@@ -1,24 +1,72 @@
 @import "variables";
 
 footer {
-	padding: 7%;
+	padding: 7% 7% 4% 7%;
+
+	.tel {
+		display: none;
+	}
+
+	.left {
+		border-bottom: 1px solid color("light-blue", "lighten-4");
+		padding-bottom: 2%;
+		margin-bottom: 1%;
+	}
 }
 
 @media screen and (min-width: $small-screen) {
 	footer {
-		padding: 5%;
+		padding: 5% 5% 3% 5%;
+
+		.tel {
+			display: inline-block;
+		}
+
+		.tel-link {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: $medium-screen) {
+	footer {
+
+		.left, .right {
+			width: 45%;
+		}
+
+		.left {
+			text-align: right;
+			margin-left: 5%;
+			padding: 1% 3%;
+			border-bottom: none;
+			border-right: 1px solid color("light-blue", "lighten-4");
+			margin-bottom: 0;
+		}
+
+		.right {
+			padding-left: 2%;
+		}
 	}
 }
 
 @media screen and (min-width: $large-screen) {
 	footer {
-		padding: 4%;
+		padding: 4% 4% 2% 4%;
+
+		.left, .right {
+			width: 35%;
+		}
+
+		.left {
+			margin-left: 15%;
+		}
 	}
 }
 
 @media screen and (min-width: $very-large-screen) {
 	footer {
-		padding: 3%;
+		padding: 3% 3% 1% 3%;
 	}
 }
 
@@ -40,22 +88,6 @@ footer {
 
 	h4 {
 		color: color("light-blue", "darken-3");
-	}
-
-	.left, .right {
-		width: 35%;
-	}
-
-	.left {
-		text-align: right;
-		margin-left: 15%;
-		padding: 1% 3%;
-		border-right: 1px solid color("light-blue", "lighten-3");
-	}
-
-	.right {
-		margin-right: 15%;
-		padding-left: 2%;
 	}
 
 	.copyright {
