@@ -161,11 +161,19 @@ ul {
 
 [animate-in-view] {
 	opacity: 0;
-	transform: translateY(50px);
-	transition: all .5s;
+	transform: translateY(75px);
+	-webkit-transition: all .8s;
+	-o-transition: all .8s;
+	transition: all .8s;
 
 	&.show {
-		opacity:1;
+		opacity: 1;
 		transform:translateY(0);
+	}
+
+	&.show:nth-child(odd) {
+		-webkit-transition: all .6s;
+		-o-transition: all .6s;
+		transition: all .6s;
 	}
 }

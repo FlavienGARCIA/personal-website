@@ -1758,8 +1758,14 @@ ul {
 
 [animate-in-view] {
   opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.5s; }
+  transform: translateY(75px);
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s; }
   [animate-in-view].show {
     opacity: 1;
     transform: translateY(0); }
+  [animate-in-view].show:nth-child(odd) {
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s; }
