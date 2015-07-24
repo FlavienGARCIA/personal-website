@@ -1633,7 +1633,7 @@
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.2); }
   .section-title h4 {
     color: #fff;
-    font-size: 64px; }
+    font-size: 70px; }
   .section-title .inner {
     background-color: rgba(3, 169, 244, 0.4);
     padding: 75px 0 60px;
@@ -1649,7 +1649,7 @@
       width: 50%;
       margin: 0 auto; }
     .section-title .inner .subtitle {
-      color: #b3e5fc; }
+      color: #fff; }
 
 .universol .section-title {
   background: url(/modules/core/img/universol1.jpg) no-repeat center 75%;
@@ -1667,7 +1667,7 @@
   .piscine .section-title .inner {
     background-color: rgba(0, 200, 83, 0.4); }
     .piscine .section-title .inner .subtitle {
-      color: #B9F6CA; }
+      /*color: color("green", "accent-1");*/ }
 
 .targets .section-title {
   /*background: url(/modules/core/img/tir_bg2.jpg) no-repeat center 50%;*/
@@ -1677,12 +1677,21 @@
   .targets .section-title .inner {
     background-color: rgba(103, 58, 183, 0.5); }
     .targets .section-title .inner .subtitle {
-      color: #d1c4e9; }
+      /*color: color("deep-purple", "lighten-4");*/ }
 
 .section-content .inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2%; }
+  padding: 7%; }
+  @media screen and (min-width: 768px) {
+    .section-content .inner {
+      padding: 5%; } }
+  @media screen and (min-width: 1280px) {
+    .section-content .inner {
+      padding: 4%; } }
+  @media screen and (min-width: 1600px) {
+    .section-content .inner {
+      padding: 3%; } }
 
 .section-content .left, .section-content .right {
   width: 100%;

@@ -30,7 +30,7 @@ a {
 		height: 1px;
 		background-color: lighten($secondary-color, 10%);
 		position: absolute;
-		bottom: 0;
+		bottom: -2px;
 		left: 0;
 		-webkit-transition: all .15s;
 		-o-transition: all .15s;

@@ -21,7 +21,7 @@
 
 	h4 {
 		color: #fff;
-		font-size: 64px;
+		font-size: 70px;
 	}
 
 	.inner {
@@ -46,7 +46,7 @@
 		}
 
 		.subtitle {
-			color: color("light-blue", "lighten-4");
+			color: #fff;
 		}
 	}
 }
@@ -75,7 +75,7 @@
 			background-color: rgba(0, 200, 83, .4);
 
 			.subtitle {
-				color: color("green", "accent-1");
+				/*color: color("green", "accent-1");*/
 			}
 		}
 	}
@@ -92,7 +92,7 @@
 			background-color: rgba(103, 58, 183, .5);
 
 			.subtitle {
-				color: color("deep-purple", "lighten-4");
+				/*color: color("deep-purple", "lighten-4");*/
 			}
 		}
 	}
@@ -103,7 +103,20 @@
 	.inner {
 		max-width: 1280px;
 		margin: 0 auto;
-		padding: 2%;
+		padding: 7%;
+
+
+		@media screen and (min-width: $small-screen) {
+			padding: 5%;
+		}
+
+		@media screen and (min-width: $large-screen) {
+			padding: 4%;
+		}
+
+		@media screen and (min-width: $very-large-screen) {
+			padding: 3%;
+		}
 	}
 
 	.left, .right {
