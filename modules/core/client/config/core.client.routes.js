@@ -16,10 +16,9 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 		var translationsFR = {
 			SIDEBAR: {
 				TITLE: 'Développeur front-end',
-				FIRST_PARAGRAPH: 'Je suis un passionné du web',
-				SECOND_PARAGRAPH: '(en particulier par HTML 5, CSS 3 et JavaScript)',
+				FIRST_PARAGRAPH: 'Je suis passionné par le web',
+				SECOND_PARAGRAPH: '(en particulier HTML 5, CSS 3 et JavaScript)',
 				THIRD_PARAGRAPH: 'Je développe des expériences responsives dynamiques.',
-				PHONE_BTN: 'Téléphone',
 			},
 			PROJECTS: {
 				TITLE: 'Mes projets',
@@ -40,8 +39,8 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				PHOTO_SKILL: 'Photographie avec DSLR Canon',
 				ENGLISH_SKILL: 'Anglais (lu, écrit et compréhension orale)'
 			},
-			CONTACT: {
-				TITLE: 'Contact'
+			FOOTER: {
+				TITLE: 'A propos'
 			},
 			VISIT_LINK: 'Accéder au site'
 		};
@@ -51,7 +50,6 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				TITLE: 'Front-end developper',
 				FIRST_PARAGRAPH: 'Web developer specializing in front-end, I use HTML 5, CSS 3 and JavaScript to design intuitive and dynamic experiences, where the user experience is always a priority.',
 				SECOND_PARAGRAPH: 'The constant deepening of my knowledge and using the latest web technologies is for me an essential part of web development, and I am commited to improve them every day.',
-				PHONE_BTN: 'Phone',
 			},
 			PROJECTS: {
 				TITLE: 'My projects',
@@ -72,8 +70,8 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				PHOTO_SKILL: 'Canon DSLR photography',
 				ENGLISH_SKILL: 'English (reading, writing and listening comprehension)'
 			},
-			CONTACT: {
-				TITLE: 'Contact'
+			FOOTER: {
+				TITLE: 'About'
 			},
 			VISIT_LINK: 'Access website'
 		};

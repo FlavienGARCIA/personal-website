@@ -1623,15 +1623,15 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
-    padding: 5% 20%; } }
+    padding: 5% 22%; } }
 
 @media screen and (min-width: 1280px) {
   header {
-    padding: 4% 20%; } }
+    padding: 4% 25%; } }
 
 @media screen and (min-width: 1600px) {
   header {
-    padding: 3% 30%; } }
+    padding: 3% 32%; } }
 
 header {
   background: #ffb74d;
@@ -1659,20 +1659,11 @@ header {
       width: 100%;
       padding: 2% 4% 3%; }
     header .welcome .first {
-      /*color: $secondary-color;*/
       font-weight: 300;
       margin-bottom: 5px; }
     header .welcome .second, header .welcome .third {
       font-weight: 300; }
       header .welcome .second strong, header .welcome .third strong {
         font-weight: 400; }
-  header .links {
-    margin: 75px 0 25px;
-    width: 25%;
-    clear: both;
+  header .lang {
     display: none; }
-    header .links li a {
-      width: 100%; }
-      @media screen and (min-width: 768px) {
-        header .links li a {
-          width: auto; } }
