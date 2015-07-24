@@ -1,9 +1,7 @@
 @import "variables";
 
-
-.sub-container > section.projects {
-	max-width: 100%;
-	padding: 5% 0 0 0;
+.projects {
+	padding-top: 5%;
 }
 
 .section-title {
@@ -74,10 +72,10 @@
 		background-size: cover;
 
 		.inner {
-			background-color: rgba(139, 195, 74, .6);
+			background-color: rgba(0, 200, 83, .4);
 
 			.subtitle {
-				color: color("light-green", "lighten-4");
+				color: color("green", "accent-1");
 			}
 		}
 	}
@@ -109,12 +107,16 @@
 	}
 
 	.left, .right {
-		width: 50%;
+		width: 100%;
 		padding: 2%;
+
+		@media screen and (min-width: $medium-screen) {
+			width: 50%;
+		}
 	}
 
 	h5, h6 {
-		padding-bottom: 5px;
+		padding-bottom: 7px;
 		font-weight: 300;
 	}
 
@@ -161,7 +163,7 @@
 	}
 
 	h6 + ul {
-		padding-top: 5px;
+		padding-top: 3px;
 	}
 }
 

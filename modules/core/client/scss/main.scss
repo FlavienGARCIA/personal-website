@@ -1,42 +1,31 @@
 @import "variables";
 
 .subheader {
-	margin-bottom: 3%;
+	margin: 0 0 3%;
 	color: $secondary-color;
 	text-align: center;
 }
 
-.sub-container > section {
-	padding: 7%;
-	width: 100%;
+.container {
+	
 }
 
 @media screen and (min-width: $small-screen) {
-	.sub-container > section {
-		padding: 5%;
-	}
+	
 }
 
 @media screen and (min-width: $very-large-screen) {
 
-	.sub-container > section {
-		padding: 2.5% 4%;
-	}
-
-	.sub-container > section {
-		max-width: 1280px;
-		margin: 0 auto;
-	}
+	
 }
 
 .btn {
-	padding: 8px 16px;
+	padding: 16px 32px;
 	border-radius: 3px;
 	-webkit-transition: all .15s;
 	-o-transition: all .15s;
 	transition: all .15s;
 	text-transform: uppercase;
-	font-family: "Montserrat", sans-serif;
 	display: inline-block;
 	border: 1px solid $main-color;
 	background-color: transparent;
@@ -44,6 +33,7 @@
 	position: relative;
 	width: 100%;
 	text-align: center;
+	font-size: 24px;
 
 	&.inline {
 		border: none;
@@ -52,7 +42,7 @@
 	}
 
 	i + span, span + i {
-		margin-left: 12px;
+		margin-left: 16px;
 	}
 
 	&:hover {
@@ -92,6 +82,7 @@
 		}
 	}
 }
+
 .pull-right {
 	float: right;
 }

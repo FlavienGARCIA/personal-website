@@ -1618,9 +1618,8 @@
 .transparent-text {
   color: transparent !important; }
 
-.sub-container > section.projects {
-  max-width: 100%;
-  padding: 5% 0 0 0; }
+.projects {
+  padding-top: 5%; }
 
 .section-title {
   text-align: center;
@@ -1666,9 +1665,9 @@
   -webkit-background-size: cover;
   background-size: cover; }
   .piscine .section-title .inner {
-    background-color: rgba(139, 195, 74, 0.6); }
+    background-color: rgba(0, 200, 83, 0.4); }
     .piscine .section-title .inner .subtitle {
-      color: #dcedc8; }
+      color: #B9F6CA; }
 
 .targets .section-title {
   /*background: url(/modules/core/img/tir_bg2.jpg) no-repeat center 50%;*/
@@ -1686,11 +1685,14 @@
   padding: 2%; }
 
 .section-content .left, .section-content .right {
-  width: 50%;
+  width: 100%;
   padding: 2%; }
+  @media screen and (min-width: 1024px) {
+    .section-content .left, .section-content .right {
+      width: 50%; } }
 
 .section-content h5, .section-content h6 {
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   font-weight: 300; }
 
 .section-content h5 {
@@ -1726,7 +1728,7 @@
       margin-bottom: 2px; }
 
 .section-content h6 + ul {
-  padding-top: 5px; }
+  padding-top: 3px; }
 
 .section-footer {
   clear: both;

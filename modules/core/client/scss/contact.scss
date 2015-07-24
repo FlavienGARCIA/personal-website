@@ -1,0 +1,23 @@
+@import "variables";
+
+.contact {
+	padding: 7%;
+}
+
+@media screen and (min-width: $small-screen) {
+	.contact {
+		padding: 5%;
+	}
+}
+
+@media screen and (min-width: $large-screen) {
+	.contact {
+		padding: 4%;
+	}
+}
+
+@media screen and (min-width: $very-large-screen) {
+	.contact {
+		padding: 3%;
+	}
+}

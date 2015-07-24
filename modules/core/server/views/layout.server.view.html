@@ -51,15 +51,9 @@
 <body class="ng-cloak cf" data-ng-controller="HomeController">
 	<header data-ng-include="'/modules/core/views/header.client.view.html'" class="sidebar cf"></header>
 	<div class="container">
-		<div class="sub-container" id="projects">
-			<section ng-include="'/modules/core/views/projects.client.view.html'" class="projects"></section>
-		</div>
-		<div class="sub-container" id="bio">
-			<section ng-include="'/modules/core/views/bio.client.view.html'" class="bio"></section>
-		</div>
-		<div class="sub-container" id="contact">
-			<section ng-include="'/modules/core/views/contact.client.view.html'" class="contact"></section>
-		</div>
+		<section ng-include="'/modules/core/views/projects.client.view.html'" class="projects"></section>
+		<section ng-include="'/modules/core/views/bio.client.view.html'" class="bio"></section>
+		<section ng-include="'/modules/core/views/contact.client.view.html'" class="contact"></section>
 	</div>
 
 	<!--Embedding The User Object-->

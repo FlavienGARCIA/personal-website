@@ -1618,61 +1618,17 @@
 .transparent-text {
   color: transparent !important; }
 
-.bio {
+.contact {
   padding: 7%; }
 
 @media screen and (min-width: 768px) {
-  .bio {
+  .contact {
     padding: 5%; } }
 
 @media screen and (min-width: 1280px) {
-  .bio {
+  .contact {
     padding: 4%; } }
 
 @media screen and (min-width: 1600px) {
-  .bio {
+  .contact {
     padding: 3%; } }
-
-.bio {
-  /*	border-top: 1px solid $secondary-color;
-	border-bottom: 1px solid $secondary-color;*/
-  background-color: #e1f5fe; }
-  .bio .description {
-    text-align: center;
-    font-size: 24px;
-    width: 50%;
-    margin: 0 auto 60px; }
-  .bio .skills-wrap {
-    max-width: 1280px;
-    margin: 0 auto; }
-  .bio section {
-    width: 33%;
-    padding-right: 3%; }
-  .bio h6 {
-    color: #03a9f4;
-    margin-bottom: 5px;
-    padding-bottom: 7px;
-    font-weight: 300;
-    border-bottom: 1px solid #03a9f4; }
-  .bio li {
-    margin-bottom: 5px;
-    position: relative;
-    padding-left: 10px; }
-    .bio li:before {
-      content: '';
-      position: absolute;
-      left: -10px;
-      top: 12px;
-      width: 10px;
-      height: 1px;
-      background-color: #03a9f4; }
-  .bio ul {
-    margin: 0;
-    padding: 10px 0 10px 10px;
-    position: relative; }
-    .bio ul ul {
-      padding: 0 0 0 20px;
-      margin-top: 6px;
-      border-left: 1px solid #03a9f4; }
-      .bio ul ul li {
-        margin-bottom: 2px; }

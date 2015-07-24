@@ -1660,7 +1660,7 @@ a {
 body {
   font-family: 'Lato', sans-serif;
   background: white;
-  color: #666;
+  color: #1a237e;
   font-weight: 300;
   font-size: 16px;
   -webkit-transition: all 0.2s;
@@ -1671,18 +1671,15 @@ body {
 strong {
   font-weight: 400; }
 
-.inner {
-  position: relative; }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   color: #ffb74d;
   line-height: 1em;
   margin: 0;
-  -webkit-transition: color 0.2S;
-  -o-transition: color 0.2S;
-  transition: color 0.2S;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
   font-weight: 100; }
 
 h2 {
@@ -1715,6 +1712,9 @@ ul {
 
 .mr5 {
   margin-right: 5px !important; }
+
+.mr10 {
+  margin-right: 10px !important; }
 
 .ml5 {
   margin-left: 5px !important; }

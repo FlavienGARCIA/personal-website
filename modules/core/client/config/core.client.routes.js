@@ -18,18 +18,8 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				TITLE: 'Développeur front-end',
 				FIRST_PARAGRAPH: 'Avec HTML 5, CSS 3 et JavaScript,',
 				SECOND_PARAGRAPH: 'je réalise des expériences responsives et dynamiques.',
-				THIRD_PARAGRAPH: 'Passionné par le web. Disponible immédiatement.',
+				THIRD_PARAGRAPH: 'Passionné par le web et disponible immédiatement.',
 				PHONE_BTN: 'Téléphone',
-			},
-			BIO: {
-				TITLE: 'Outils',
-				PARAGRAPH: 'En plus du front-end qui est mon domaine de prédilection, j\'ai également acquis au fil du temps un grand nombre de compétences, allant du back-end à l\'infographie en passant par la création 3D.',
-				SUBTITLE_1: 'Utilisation avancée',
-				SUBTITLE_2: 'A l\'aise et autonome',
-				SUBTITLE_3: 'Notions avancées',
-				SUBTITLE_4: 'Autres',
-				PHOTO_SKILL: 'Photographie avec DSLR Canon',
-				ENGLISH_SKILL: 'Anglais (lu, écrit et compréhension orale)'
 			},
 			PROJECTS: {
 				TITLE: 'Mes projets',
@@ -39,6 +29,16 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				SUBTITLE_2: 'Application de gestion de cibles pour tireur sportif',
 				TITLE_3: 'Construire une piscine naturelle',
 				SUBTITLE_3: 'Site de présentation et de vente d\'un ebook'
+			},
+			BIO: {
+				TITLE: 'Mes outils',
+				PARAGRAPH: 'En plus du front-end qui est mon domaine de prédilection, j\'ai également acquis au fil du temps un grand nombre de compétences, allant du back-end à l\'infographie en passant par la création 3D.',
+				SUBTITLE_1: 'Utilisation avancée',
+				SUBTITLE_2: 'A l\'aise et autonome',
+				SUBTITLE_3: 'Notions avancées',
+				SUBTITLE_4: 'Autres',
+				PHOTO_SKILL: 'Photographie avec DSLR Canon',
+				ENGLISH_SKILL: 'Anglais (lu, écrit et compréhension orale)'
 			},
 			CONTACT: {
 				TITLE: 'Contact'
@@ -53,16 +53,6 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				SECOND_PARAGRAPH: 'The constant deepening of my knowledge and using the latest web technologies is for me an essential part of web development, and I am commited to improve them every day.',
 				PHONE_BTN: 'Phone',
 			},
-			BIO: {
-				TITLE: 'Tools',
-				PARAGRAPH: 'In addition to the front-end which is my field of choice, I also acquired over time a large number of skills, from back-end to computer graphics through 3D creation.',
-				SUBTITLE_1: 'Advanced usage',
-				SUBTITLE_2: 'Comfortable and autonomous',
-				SUBTITLE_3: 'Advanced notions',
-				SUBTITLE_4: 'Others',
-				PHOTO_SKILL: 'Canon DSLR photography',
-				ENGLISH_SKILL: 'English (reading, writing and listening comprehension)'
-			},
 			PROJECTS: {
 				TITLE: 'My projects',
 				TITLE_1: 'Universol',
@@ -71,6 +61,16 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				SUBTITLE_2: 'Management application for sport shooters',
 				TITLE_3: '"Construire une piscine naturelle"',
 				SUBTITLE_3: 'Presentation and sale of an ebook'
+			},
+			BIO: {
+				TITLE: 'My tools',
+				PARAGRAPH: 'In addition to the front-end which is my field of choice, I also acquired over time a large number of skills, from back-end to computer graphics through 3D creation.',
+				SUBTITLE_1: 'Advanced usage',
+				SUBTITLE_2: 'Comfortable and autonomous',
+				SUBTITLE_3: 'Advanced notions',
+				SUBTITLE_4: 'Others',
+				PHOTO_SKILL: 'Canon DSLR photography',
+				ENGLISH_SKILL: 'English (reading, writing and listening comprehension)'
 			},
 			CONTACT: {
 				TITLE: 'Contact'

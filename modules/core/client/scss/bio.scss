@@ -1,37 +1,86 @@
 @import "variables";
 
 .bio {
+	padding: 7%;
+}
 
-	h5 {
-		color: $secondary-color;
+@media screen and (min-width: $small-screen) {
+	.bio {
+		padding: 5%;
 	}
+}
 
-	/*section {
-		width: 24%;
-		padding-right: 1%;
-		display: inline-block;
+@media screen and (min-width: $large-screen) {
+	.bio {
+		padding: 4%;
 	}
-	*/
+}
+
+@media screen and (min-width: $very-large-screen) {
+	.bio {
+		padding: 3%;
+	}
+}
+
+.bio {
+/*	border-top: 1px solid $secondary-color;
+	border-bottom: 1px solid $secondary-color;*/
+	background-color: color("light-blue", "lighten-5");
+
 	.description {
-		text-align: justify;
-		width: 35%;
-		margin-left: auto;
-		margin-right: auto;
+		text-align: center;
+		font-size: 24px;
+		width: 50%;
+		margin: 0 auto 60px;
 	}
 
-	.separator {
-		margin: 20px 0;
+	.skills-wrap {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	section {
+		width: 33%;
+		padding-right: 3%;
+	}
+	
+	h6 {
+		color: $secondary-color;
+		margin-bottom: 5px;
+		padding-bottom: 7px;
+		font-weight: 300;
+		border-bottom: 1px solid $secondary-color;
+	}
+
+	li {
+		margin-bottom: 5px;
+		position: relative;
+		padding-left: 10px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: -10px;
+			top: 12px;
+			width: 10px;
+			height: 1px;
+			background-color: $secondary-color;
+		}
 	}
 
 	ul {
+		margin: 0;
+		padding: 10px 0 10px 10px;
+		position: relative;
 
-		li {
-			/*padding: 6px 12px;
-			background-color: $darken-body-color;
-			color: $anchor-color;
-			border-radius: 3px;
-			display: inline-block;
-			margin: 0 3px 6px 0;*/
+		ul {
+			padding: 0 0 0 20px;
+			margin-top: 6px;
+			border-left: 1px solid $secondary-color;
+
+			li {
+				margin-bottom: 2px;
+			}
 		}
 	}
 }
