@@ -23,9 +23,10 @@
 }
 
 .bio {
-/*	border-top: 1px solid $secondary-color;
-	border-bottom: 1px solid $secondary-color;*/
 	background-color: color("light-blue", "lighten-5");
+	background: -webkit-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 7%), color("light-blue", "lighten-5"));
+	background: -moz-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 7%), color("light-blue", "lighten-5"));
+	background: radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 7%), color("light-blue", "lighten-5"));
 
 	.description {
 		text-align: center;

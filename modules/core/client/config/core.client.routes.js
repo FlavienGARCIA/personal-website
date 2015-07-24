@@ -16,9 +16,9 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 		var translationsFR = {
 			SIDEBAR: {
 				TITLE: 'Développeur front-end',
-				FIRST_PARAGRAPH: 'Avec HTML 5, CSS 3 et JavaScript,',
-				SECOND_PARAGRAPH: 'je réalise des expériences responsives et dynamiques.',
-				THIRD_PARAGRAPH: 'Passionné par le web et disponible immédiatement.',
+				FIRST_PARAGRAPH: 'Je suis un passionné du web',
+				SECOND_PARAGRAPH: '(en particulier par HTML 5, CSS 3 et JavaScript)',
+				THIRD_PARAGRAPH: 'Je développe des expériences responsives dynamiques.',
 				PHONE_BTN: 'Téléphone',
 			},
 			PROJECTS: {
@@ -33,7 +33,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 			BIO: {
 				TITLE: 'Mes outils',
 				PARAGRAPH: 'En plus du front-end qui est mon domaine de prédilection, j\'ai également acquis au fil du temps un grand nombre de compétences, allant du back-end à l\'infographie en passant par la création 3D.',
-				SUBTITLE_1: 'Utilisation avancée',
+				SUBTITLE_1: 'Utilisation poussée',
 				SUBTITLE_2: 'A l\'aise et autonome',
 				SUBTITLE_3: 'Notions avancées',
 				SUBTITLE_4: 'Autres',

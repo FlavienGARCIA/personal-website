@@ -54,14 +54,8 @@
 .universol {
 	 .section-title {
 		background: url(/modules/core/img/universol1.jpg) no-repeat center 75%;
-		/*background: url(/modules/core/img/universol_2.jpg) no-repeat center 75%;*/
-		/*background: url(/modules/core/img/universol_3.jpg) no-repeat center 38%;*/
 		-webkit-background-size: cover;
 		background-size: cover;
-
-		.inner {
-			/*background-color: rgba(233, 30, 99, .5);*/
-		}
 	}
 }
 
@@ -72,28 +66,19 @@
 		background-size: cover;
 
 		.inner {
-			background-color: rgba(0, 200, 83, .4);
-
-			.subtitle {
-				/*color: color("green", "accent-1");*/
-			}
+			background-color: rgba(0, 200, 83, .5);
 		}
 	}
 }
 
 .targets {
 	.section-title {
-		/*background: url(/modules/core/img/tir_bg2.jpg) no-repeat center 50%;*/
 		background: url(/modules/core/img/tir_bg3.jpg) no-repeat center 50%;
 		-webkit-background-size: cover;
 		background-size: cover;
 
 		.inner {
 			background-color: rgba(103, 58, 183, .5);
-
-			.subtitle {
-				/*color: color("deep-purple", "lighten-4");*/
-			}
 		}
 	}
 }
@@ -126,6 +111,10 @@
 		@media screen and (min-width: $medium-screen) {
 			width: 50%;
 		}
+
+		& > section {
+			float: left;
+		}
 	}
 
 	h5, h6 {
@@ -136,10 +125,17 @@
 	h5 {
 		margin-bottom: 15px;
 		border-bottom: 1px solid lighten($main-color, 20%);
+
+		& + section {
+			margin-right: 50px;
+
+			& + section {
+				margin-right: 50px;
+			}
+		}
 	}
 
 	h6 {
-		display: inline-block;
 		margin-top: 10px;
 	}
 
@@ -161,7 +157,7 @@
 
 	ul {
 		margin: 0;
-		padding: 10px 0 10px 10px;
+		padding: 10px;
 		position: relative;
 
 		ul {

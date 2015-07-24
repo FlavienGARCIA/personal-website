@@ -1632,3 +1632,42 @@
 @media screen and (min-width: 1600px) {
   .contact {
     padding: 3%; } }
+
+.contact {
+  /*background-color: color("blue-grey", "darken-4");
+	background: -webkit-radial-gradient(center top, lighten(color("blue-grey", "darken-4"), 5%), color("blue-grey", "darken-4"));
+	background: -moz-radial-gradient(center top, lighten(color("blue-grey", "darken-4"), 5%), color("blue-grey", "darken-4"));
+	background: radial-gradient(center top, lighten(color("blue-grey", "darken-4"), 5%), color("blue-grey", "darken-4"));*/
+  background: #03a9f4;
+  background: -webkit-radial-gradient(center top, #81d4fa, #03a9f4);
+  background: -moz-radial-gradient(center top, #81d4fa, #03a9f4);
+  background: radial-gradient(center top, #81d4fa, #03a9f4);
+  color: #fff;
+  font-size: 20px; }
+  .contact h2 {
+    color: #fff; }
+  .contact h4 {
+    color: #0288d1; }
+  .contact .left, .contact .right {
+    width: 35%;
+    padding: 1% 3%; }
+  .contact .left {
+    text-align: right;
+    margin-left: 15%;
+    border-right: 1px solid rgba(255, 255, 255, 0.35); }
+  .contact .right {
+    margin-right: 15%; }
+  .contact .copyright {
+    clear: both;
+    text-align: center;
+    color: #0288d1;
+    padding-top: 2%; }
+  .contact ul {
+    margin: 15px 0 0 0; }
+    .contact ul li {
+      margin-bottom: 10px; }
+      .contact ul li i {
+        margin-right: 20px;
+        color: #0288d1; }
+  .contact a {
+    color: #fff; }

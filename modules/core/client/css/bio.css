@@ -1634,9 +1634,10 @@
     padding: 3%; } }
 
 .bio {
-  /*	border-top: 1px solid $secondary-color;
-	border-bottom: 1px solid $secondary-color;*/
-  background-color: #e1f5fe; }
+  background-color: #e1f5fe;
+  background: -webkit-radial-gradient(center top, white, #e1f5fe);
+  background: -moz-radial-gradient(center top, white, #e1f5fe);
+  background: radial-gradient(center top, white, #e1f5fe); }
   .bio .description {
     text-align: center;
     font-size: 24px;

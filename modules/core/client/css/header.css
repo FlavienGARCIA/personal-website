@@ -1642,16 +1642,10 @@ header {
   header h1 {
     color: #fff;
     margin-bottom: 0;
-    -webkit-transition: color 0.2s;
-    -o-transition: color 0.2s;
-    transition: color 0.2s;
     font-weight: 200; }
   header h2 {
     margin-top: 0;
-    -webkit-transition: color 0.2s;
-    -o-transition: color 0.2s;
-    transition: color 0.2s;
-    color: #fb8c00;
+    color: #f57c00;
     font-weight: 100; }
   header .welcome {
     margin-bottom: 2%; }
@@ -1666,7 +1660,8 @@ header {
       padding: 2% 4% 3%; }
     header .welcome .first {
       /*color: $secondary-color;*/
-      font-weight: 300; }
+      font-weight: 300;
+      margin-bottom: 5px; }
     header .welcome .second, header .welcome .third {
       font-weight: 300; }
       header .welcome .second strong, header .welcome .third strong {

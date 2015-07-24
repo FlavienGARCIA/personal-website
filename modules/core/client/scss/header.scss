@@ -33,18 +33,12 @@ header {
 	h1 {
 		color: #fff;
 		margin-bottom: 0;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
 		font-weight: 200;
 	}
 
 	h2 {
 		margin-top: 0;
-		-webkit-transition: color .2s;
-		-o-transition: color .2s;
-		transition: color .2s;
-		color: color("orange", "darken-1");
+		color: color("orange", "darken-2");
 		font-weight: 100;
 	}
 
@@ -67,6 +61,7 @@ header {
 		.first {
 			/*color: $secondary-color;*/
 			font-weight: 300;
+			margin-bottom: 5px;
 		}
 
 		.second, .third {
