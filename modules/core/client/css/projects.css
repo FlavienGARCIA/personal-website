@@ -1647,11 +1647,17 @@
     font-size: 20px; }
     .section-title .inner .separator {
       margin: 30px auto 0;
-      opacity: .5; }
+      opacity: .5;
+      display: none; }
     .section-title .inner .top {
       text-align: center; }
     .section-title .inner .bottom {
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 0 2%;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.05); }
     .section-title .inner .subtitle {
       color: #fff; }
   @media screen and (min-width: 768px) {
@@ -1663,7 +1669,8 @@
       line-height: 70px;
       margin-bottom: 0; }
     .section-title .inner .bottom {
-      width: 75%; } }
+      width: 75%;
+      text-align: center; } }
   @media screen and (min-width: 1280px) {
     .section-title .inner {
       padding: 4%;
@@ -1678,13 +1685,8 @@
   background: url(/modules/core/img/universol1.jpg) no-repeat center 75%;
   -webkit-background-size: cover;
   background-size: cover; }
-
-.piscine .section-title {
-  background: url(/modules/core/img/piscine2.jpg) no-repeat center 70%;
-  -webkit-background-size: cover;
-  background-size: cover; }
-  .piscine .section-title .inner {
-    background-color: rgba(0, 200, 83, 0.5); }
+  .universol .section-title .inner {
+    /*background-color: rgba(233, 30, 99, .3);*/ }
 
 .targets .section-title {
   background: url(/modules/core/img/tir_bg3.jpg) no-repeat center 50%;
@@ -1692,6 +1694,13 @@
   background-size: cover; }
   .targets .section-title .inner {
     background-color: rgba(103, 58, 183, 0.5); }
+
+.piscine .section-title {
+  background: url(/modules/core/img/piscine2.jpg) no-repeat center 70%;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .piscine .section-title .inner {
+    background-color: rgba(0, 200, 83, 0.5); }
 
 .section-content .inner {
   max-width: 1280px;

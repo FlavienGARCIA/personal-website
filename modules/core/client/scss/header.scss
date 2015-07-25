@@ -29,46 +29,39 @@ header {
 	background: -moz-radial-gradient(center top, color("orange", "lighten-3"), $main-color);
 	background: radial-gradient(center top, color("orange", "lighten-3"), $main-color);
 	color: #fff;
+	text-align: center;
 
 	h1 {
 		color: #fff;
-		margin-bottom: 0;
-		font-weight: 200;
+		font-size: 100px;
 	}
 
 	h2 {
-		margin-top: 0;
 		color: color("orange", "darken-2");
-		font-weight: 100;
+		font-size: 71px;
 	}
 
 	.welcome {
+		margin-top: 6%;
 		margin-bottom: 2%;
+		border: 1px solid rgba(255, 255, 255, .35);
+		padding: 3% 5%;
+		border-radius: 4px;
+		background-color: rgba(255, 255, 255, .1);
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 5px 12px rgba(0, 0, 0, .05);
+		text-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 3px 5px rgba(0, 0, 0, .15);
 
 		p {
 			margin: 0;
 		}
 
-		.first-wrapper {
-			margin: 8% 0 2%;
-			border-radius: 4px;
-			color: color("orange", "lighten-1");
-			background: color("orange", "lighten-5");
-			width: 100%;
-			padding: 2% 4% 3%;
-		}
-
 		.first {
-			font-weight: 300;
 			margin-bottom: 5px;
+			font-size: 34px;
 		}
 
-		.second, .third {
-			font-weight: 300;
-
-			strong {
-				font-weight: 400;
-			}
+		.second {
+			font-size: 28px;
 		}
 	}
 

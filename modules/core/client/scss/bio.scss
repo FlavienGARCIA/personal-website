@@ -64,9 +64,9 @@
 
 .bio {
 	background-color: color("light-blue", "lighten-5");
-	background: -webkit-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 5%), color("light-blue", "lighten-5"));
-	background: -moz-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 5%), color("light-blue", "lighten-5"));
-	background: radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 5%), color("light-blue", "lighten-5"));
+	background: -webkit-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 3%), color("light-blue", "lighten-5"));
+	background: -moz-radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 3%), color("light-blue", "lighten-5"));
+	background: radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 3%), color("light-blue", "lighten-5"));
 
 	.description {
 		text-align: center;

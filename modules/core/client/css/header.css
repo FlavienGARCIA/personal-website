@@ -1638,32 +1638,29 @@ header {
   background: -webkit-radial-gradient(center top, #ffcc80, #ffb74d);
   background: -moz-radial-gradient(center top, #ffcc80, #ffb74d);
   background: radial-gradient(center top, #ffcc80, #ffb74d);
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
   header h1 {
     color: #fff;
-    margin-bottom: 0;
-    font-weight: 200; }
+    font-size: 100px; }
   header h2 {
-    margin-top: 0;
     color: #f57c00;
-    font-weight: 100; }
+    font-size: 71px; }
   header .welcome {
-    margin-bottom: 2%; }
+    margin-top: 6%;
+    margin-bottom: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 3% 5%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 5px 12px rgba(0, 0, 0, 0.05);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.15); }
     header .welcome p {
       margin: 0; }
-    header .welcome .first-wrapper {
-      margin: 8% 0 2%;
-      border-radius: 4px;
-      color: #ffa726;
-      background: #fff3e0;
-      width: 100%;
-      padding: 2% 4% 3%; }
     header .welcome .first {
-      font-weight: 300;
-      margin-bottom: 5px; }
-    header .welcome .second, header .welcome .third {
-      font-weight: 300; }
-      header .welcome .second strong, header .welcome .third strong {
-        font-weight: 400; }
+      margin-bottom: 5px;
+      font-size: 34px; }
+    header .welcome .second {
+      font-size: 28px; }
   header .lang {
     display: none; }

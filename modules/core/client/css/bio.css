@@ -1659,9 +1659,9 @@
 
 .bio {
   background-color: #e1f5fe;
-  background: -webkit-radial-gradient(center top, #fafdff, #e1f5fe);
-  background: -moz-radial-gradient(center top, #fafdff, #e1f5fe);
-  background: radial-gradient(center top, #fafdff, #e1f5fe); }
+  background: -webkit-radial-gradient(center top, #f0fafe, #e1f5fe);
+  background: -moz-radial-gradient(center top, #f0fafe, #e1f5fe);
+  background: radial-gradient(center top, #f0fafe, #e1f5fe); }
   .bio .description {
     text-align: center;
     font-size: 24px;

@@ -43,6 +43,7 @@
 		.separator {
 			margin: 30px auto 0;
 			opacity: .5;
+			display: none;
 		}
 
 		.top {
@@ -51,6 +52,11 @@
 
 		.bottom {
 			margin: 0 auto;
+			margin-top: 30px;
+			padding: 0 2%;
+			border: 1px solid rgba(255, 255, 255, .25);
+			border-radius: 4px;
+			background-color: rgba(255, 255, 255, .05);
 		}
 
 		.subtitle {
@@ -74,6 +80,7 @@
 		.inner {
 			.bottom {
 				width: 75%;
+				text-align: center;
 			}
 		}
 	}
@@ -101,17 +108,9 @@
 		background: url(/modules/core/img/universol1.jpg) no-repeat center 75%;
 		-webkit-background-size: cover;
 		background-size: cover;
-	}
-}
-
-.piscine {
-	.section-title {
-		background: url(/modules/core/img/piscine2.jpg) no-repeat center 70%;
-		-webkit-background-size: cover;
-		background-size: cover;
 
 		.inner {
-			background-color: rgba(0, 200, 83, .5);
+			/*background-color: rgba(233, 30, 99, .3);*/
 		}
 	}
 }
@@ -124,6 +123,18 @@
 
 		.inner {
 			background-color: rgba(103, 58, 183, .5);
+		}
+	}
+}
+
+.piscine {
+	.section-title {
+		background: url(/modules/core/img/piscine2.jpg) no-repeat center 70%;
+		-webkit-background-size: cover;
+		background-size: cover;
+
+		.inner {
+			background-color: rgba(0, 200, 83, .5);
 		}
 	}
 }

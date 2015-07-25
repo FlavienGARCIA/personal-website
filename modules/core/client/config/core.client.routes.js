@@ -16,9 +16,8 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 		var translationsFR = {
 			SIDEBAR: {
 				TITLE: 'Développeur front-end',
-				FIRST_PARAGRAPH: 'Je suis passionné par le web',
-				SECOND_PARAGRAPH: '(en particulier HTML 5, CSS 3 et JavaScript)',
-				THIRD_PARAGRAPH: 'Je développe des expériences responsives dynamiques.',
+				FIRST_PARAGRAPH: 'Spécialisé en <strong>HTML 5</strong>, <strong>CSS3</strong> et <strong>JavaScript</strong>,',
+				SECOND_PARAGRAPH: 'je réalise des sites web responsives et fonctionnels.'
 			},
 			PROJECTS: {
 				TITLE: 'Mes projets',
