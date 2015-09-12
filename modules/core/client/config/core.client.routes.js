@@ -14,9 +14,9 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 		});
 
 		var translationsFR = {
-			SIDEBAR: {
+			HEADER: {
 				TITLE: 'Développeur front-end',
-				FIRST_PARAGRAPH: 'Spécialisé en <strong>HTML 5</strong>, <strong>CSS3</strong> et <strong>JavaScript</strong>,',
+				FIRST_PARAGRAPH: 'Spécialisé en <strong>HTML 5</strong>, <strong>CSS 3</strong> et <strong>JavaScript</strong>.',
 				SECOND_PARAGRAPH: 'je réalise des sites web responsives et fonctionnels.'
 			},
 			PROJECTS: {
@@ -31,8 +31,8 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 			BIO: {
 				TITLE: 'Mes outils',
 				PARAGRAPH: 'En plus du front-end qui est mon domaine de prédilection, j\'ai également acquis au fil du temps un grand nombre de compétences, allant du back-end à l\'infographie en passant par la création 3D.',
-				SUBTITLE_1: 'Utilisation poussée',
-				SUBTITLE_2: 'A l\'aise et autonome',
+				SUBTITLE_1: 'Confirmé',
+				SUBTITLE_2: 'Intermédiaire',
 				SUBTITLE_3: 'Notions avancées',
 				SUBTITLE_4: 'Autres',
 				PHOTO_SKILL: 'Photographie avec DSLR Canon',
@@ -45,7 +45,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 		};
 
 		var translationsEN = {
-			SIDEBAR: {
+			HEADER: {
 				TITLE: 'Front-end developper',
 				FIRST_PARAGRAPH: 'Web developer specializing in front-end, I use HTML 5, CSS 3 and JavaScript to design intuitive and dynamic experiences, where the user experience is always a priority.',
 				SECOND_PARAGRAPH: 'The constant deepening of my knowledge and using the latest web technologies is for me an essential part of web development, and I am commited to improve them every day.',

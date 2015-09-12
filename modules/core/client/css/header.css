@@ -1640,25 +1640,35 @@ header {
   background: radial-gradient(center top, #ffcc80, #ffb74d);
   color: #fff;
   text-align: center; }
+  header .title {
+    margin-bottom: -15px; }
+    header .title img {
+      width: 100%; }
   header h1 {
     color: #fff;
-    font-size: 100px; }
+    font-size: 100px;
+    text-transform: uppercase;
+    text-indent: -9999px;
+    height: 0; }
   header h2 {
     color: #f57c00;
-    font-size: 71px; }
+    font-size: 71px;
+    text-transform: uppercase;
+    text-indent: -9999px;
+    height: 0; }
   header .welcome {
-    margin-top: 6%;
-    margin-bottom: 2%;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    padding: 3% 5%;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 5px 12px rgba(0, 0, 0, 0.05);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.15); }
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.15);
+    background: transparent;
+    background: -webkit-radial-gradient(center top, #ffc671, transparent);
+    background: -moz-radial-gradient(center top, #ffc671, transparent);
+    background: radial-gradient(center top, #ffc671, transparent); }
+    header .welcome .separator {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      opacity: .5; }
     header .welcome p {
       margin: 0; }
     header .welcome .first {
-      margin-bottom: 5px;
       font-size: 34px; }
     header .welcome .second {
       font-size: 28px; }
