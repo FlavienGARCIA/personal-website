@@ -40,7 +40,7 @@
 
 	h4 {
 		color: #fff;
-		line-height: 45px;
+		line-height: 50px;
 		margin-bottom: 5px;
 	}
 
@@ -54,10 +54,6 @@
 			margin: 30px auto 0;
 			opacity: .5;
 			display: none;
-		}
-
-		.top {
-			/*text-align: center;*/
 		}
 
 		.bottom {
@@ -251,4 +247,8 @@
 	clear: both;
 	padding: 2%;
 	text-align: center;
+
+	p {
+		text-align: center;
+	}
 }

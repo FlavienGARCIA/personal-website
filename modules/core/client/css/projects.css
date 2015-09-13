@@ -1646,7 +1646,7 @@
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.2); }
   .section-title h4 {
     color: #fff;
-    line-height: 45px;
+    line-height: 50px;
     margin-bottom: 5px; }
   .section-title .inner {
     background-color: rgba(3, 169, 244, 0.5);
@@ -1657,8 +1657,6 @@
       margin: 30px auto 0;
       opacity: .5;
       display: none; }
-    .section-title .inner .top {
-      /*text-align: center;*/ }
     .section-title .inner .bottom {
       margin: 0 auto;
       margin-top: 30px;
@@ -1784,3 +1782,5 @@
   clear: both;
   padding: 2%;
   text-align: center; }
+  .section-footer p {
+    text-align: center; }

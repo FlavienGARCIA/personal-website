@@ -1698,7 +1698,8 @@ h6 {
   font-size: 26px; }
 
 p, ul {
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  text-align: justify; }
 
 ul {
   list-style: none;
