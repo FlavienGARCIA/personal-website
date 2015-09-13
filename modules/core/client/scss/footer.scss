@@ -3,7 +3,7 @@
 footer {
 	padding: 7% 7% 4% 7%;
 
-	.tel {
+	.tel, .mail {
 		display: none;
 	}
 
@@ -18,11 +18,11 @@ footer {
 	footer {
 		padding: 5% 5% 3% 5%;
 
-		.tel {
-			display: inline-block;
+		.tel, .mail {
+			display: block;
 		}
 
-		.tel-link {
+		.tel-link, .mail-link {
 			display: none;
 		}
 	}

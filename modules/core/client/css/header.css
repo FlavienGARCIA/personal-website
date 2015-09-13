@@ -1663,14 +1663,16 @@ header {
     background: -moz-radial-gradient(center top, #ffc671, transparent);
     background: radial-gradient(center top, #ffc671, transparent); }
     header .welcome .separator {
-      margin-bottom: 20px;
-      margin-top: 20px;
+      margin-bottom: 12px;
+      margin-top: 10px;
       opacity: .5; }
+      @media screen and (min-width: 768px) {
+        header .welcome .separator {
+          margin-bottom: 20px;
+          margin-top: 20px; } }
     header .welcome p {
       margin: 0; }
     header .welcome .first {
       font-size: 34px; }
-    header .welcome .second {
-      font-size: 28px; }
   header .lang {
     display: none; }

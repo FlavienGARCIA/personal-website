@@ -3,13 +3,23 @@
 .projects {
 	
 	h2 {
-		margin: 60px 0;
-		text-align: center;
+		margin: 40px 0;
 		font-size: 50px;
+		margin-left: 7%;
 
 		@media screen and (min-width: $small-screen) {
+			margin-left: 5%;
+		}
+
+		@media screen and (min-width: $medium-screen) {
+			text-align: center;
+			margin: 50px 0;
+			font-size: 60px;
+		}
+
+		@media screen and (min-width: $large-screen) {
+			margin: 70px 0;
 			font-size: 70px;
-			margin: 80px 0;
 		}
 	}
 }
@@ -47,16 +57,13 @@
 		}
 
 		.top {
-			text-align: center;
+			/*text-align: center;*/
 		}
 
 		.bottom {
 			margin: 0 auto;
 			margin-top: 30px;
-			padding: 0 2%;
-			border: 1px solid rgba(255, 255, 255, .25);
-			border-radius: 4px;
-			background-color: rgba(255, 255, 255, .05);
+			border-top: 1px solid rgba(255, 255, 255, .5);
 		}
 
 		.subtitle {
@@ -78,9 +85,14 @@
 		}
 
 		.inner {
+			text-align: center;
+
 			.bottom {
 				width: 75%;
-				text-align: center;
+				padding: 0 2%;
+				border: 1px solid rgba(255, 255, 255, .25);
+				border-radius: 4px;
+				background-color: rgba(255, 255, 255, .05);
 			}
 		}
 	}
@@ -180,6 +192,10 @@
 	h5 {
 		margin-bottom: 15px;
 		border-bottom: 1px solid lighten($main-color, 20%);
+
+		@media screen and (max-width: $medium-screen) {
+			font-size: 35px;
+		}
 
 		& + section {
 			margin-right: 50px;

@@ -1620,7 +1620,7 @@
 
 footer {
   padding: 7% 7% 4% 7%; }
-  footer .tel {
+  footer .tel, footer .mail {
     display: none; }
   footer .left {
     border-bottom: 1px solid #b3e5fc;
@@ -1630,9 +1630,9 @@ footer {
 @media screen and (min-width: 768px) {
   footer {
     padding: 5% 5% 3% 5%; }
-    footer .tel {
-      display: inline-block; }
-    footer .tel-link {
+    footer .tel, footer .mail {
+      display: block; }
+    footer .tel-link, footer .mail-link {
       display: none; } }
 
 @media screen and (min-width: 1024px) {

@@ -5,9 +5,12 @@
 
 	h2 {
 		margin: 0 0 30px;
-		text-align: center;
 		font-size: 50px;
 		color: $secondary-color;
+
+		@media screen and (min-width: $medium-screen) {
+			text-align: center;
+		}
 
 		@media screen and (min-width: $small-screen) {
 			font-size: 70px;
@@ -69,9 +72,14 @@
 	background: radial-gradient(center top, lighten(color("light-blue", "lighten-5"), 3%), color("light-blue", "lighten-5"));
 
 	.description {
-		text-align: center;
-		font-size: 24px;
+		/*text-align: center;*/
+		font-size: 20px;
 		margin: 0 auto 60px;
+
+		@media screen and (min-width: $medium-screen) {
+			text-align: center;
+			font-size: 24px;
+		}
 	}
 
 	.skills-wrap {
