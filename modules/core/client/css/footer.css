@@ -1619,83 +1619,41 @@
   color: transparent !important; }
 
 footer {
-  padding: 7% 7% 4% 7%; }
-  footer .tel, footer .mail {
-    display: none; }
-  footer .mail a, footer .mail-link a {
-    padding-left: 12px; }
-  footer .left {
-    border-bottom: 1px solid #b3e5fc;
-    padding-bottom: 2%;
-    margin-bottom: 1%;
-    text-align: justify; }
-
-@media screen and (min-width: 768px) {
-  footer {
-    padding: 5% 5% 3% 5%; }
-    footer .tel, footer .mail {
-      display: block; }
-    footer .tel-link, footer .mail-link {
-      display: none; } }
-
-@media screen and (min-width: 1024px) {
-  footer .left, footer .right {
-    width: 45%; }
-  footer .left {
-    /*text-align: right;*/
-    margin-left: 5%;
-    padding: 1% 3%;
-    border-bottom: none;
-    border-right: 1px solid #b3e5fc;
-    margin-bottom: 0; }
-    footer .left h4 {
-      text-align: right; }
-  footer .right {
-    padding-left: 2%; } }
-
-@media screen and (min-width: 1280px) {
-  footer {
-    padding: 4% 4% 2% 4%; }
-    footer .left, footer .right {
-      width: 35%; }
-    footer .left {
-      margin-left: 15%; } }
-
-@media screen and (min-width: 1600px) {
-  footer {
-    padding: 3% 3% 1% 3%; }
-    footer .right {
-      padding-top: 5px; } }
-
-footer {
-  /*background-color: color("blue-grey", "darken-4");
-	background: -webkit-radial-gradient(center top, lighten(color("blue-grey", "darken-4"), 5%), color("blue-grey", "darken-4"));
-	background: -moz-radial-gradient(center top, lighten(color("blue-grey", "darken-4"), 5%), color("blue-grey", "darken-4"));
-	background: radial-gradient(center top, lighten(color("blue-grey", "darken-4"), 5%), color("blue-grey", "darken-4"));*/
+  padding: 7% 7% 4% 7%;
   background: #03a9f4;
   background: -webkit-radial-gradient(center top, #60ccfd, #03a9f4);
   background: -moz-radial-gradient(center top, #60ccfd, #03a9f4);
   background: radial-gradient(center top, #60ccfd, #03a9f4);
   color: #fff;
   font-size: 20px; }
-  footer h2 {
-    color: #fff; }
   footer h4 {
     color: #0277bd; }
+  footer .tel, footer .mail {
+    display: none; }
+  footer .left {
+    border-bottom: 1px solid #b3e5fc;
+    padding-bottom: 2%;
+    margin-bottom: 1%;
+    text-align: justify; }
   footer .copyright {
     clear: both;
     color: #b3e5fc;
     padding-top: 2%; }
     footer .copyright p {
       text-align: center; }
-  footer ul {
+  footer ul.right {
+    padding: 1% 0;
     margin: 20px 0 0 0; }
-    footer ul li span, footer ul li a {
+    footer ul.right li span, footer ul.right li a {
       padding: 8px 16px;
       display: inline-block; }
-      footer ul li span i, footer ul li a i {
+      footer ul.right li span i, footer ul.right li a i {
         margin-right: 20px;
         color: #0288d1; }
+    footer ul.right .mail a, footer ul.right .mail span, footer ul.right .mail-link a, footer ul.right .mail-link span {
+      padding-left: 12px; }
+    footer ul.right .contact {
+      margin-bottom: 20px; }
   footer a {
     color: #fff;
     border-radius: 4px; }
@@ -1710,3 +1668,40 @@ footer {
         color: #fff; }
       footer a:hover:before {
         width: 0; }
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 5% 5% 3% 5%; }
+    footer .tel, footer .mail {
+      display: block; }
+    footer .tel-link, footer .mail-link {
+      display: none; } }
+
+@media screen and (min-width: 1024px) {
+  footer .left, footer .right {
+    width: 45%; }
+  footer .left {
+    margin-left: 5%;
+    padding: 1% 5%;
+    border-bottom: none;
+    border-right: 1px solid #b3e5fc;
+    margin-bottom: 0; }
+  footer ul.right {
+    padding-left: 4%;
+    margin-top: 0; } }
+
+@media screen and (min-width: 1280px) {
+  footer {
+    padding: 4% 4% 2% 4%; }
+    footer .left, footer ul.right {
+      width: 40%; }
+    footer .left {
+      margin-left: 10%; } }
+
+@media screen and (min-width: 1600px) {
+  footer {
+    padding: 3% 3% 1% 3%; }
+    footer .left {
+      padding: 1% 3%; }
+    footer ul.right {
+      padding-left: 2%; } }

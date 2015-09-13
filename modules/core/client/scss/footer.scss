@@ -2,92 +2,6 @@
 
 footer {
 	padding: 7% 7% 4% 7%;
-
-	.tel, .mail {
-		display: none;
-	}
-
-	.mail a, .mail-link a {
-		padding-left: 12px;
-	}
-
-	.left {
-		border-bottom: 1px solid color("light-blue", "lighten-4");
-		padding-bottom: 2%;
-		margin-bottom: 1%;
-		text-align: justify;
-	}
-}
-
-@media screen and (min-width: $small-screen) {
-	footer {
-		padding: 5% 5% 3% 5%;
-
-		.tel, .mail {
-			display: block;
-		}
-
-		.tel-link, .mail-link {
-			display: none;
-		}
-	}
-}
-
-@media screen and (min-width: $medium-screen) {
-	footer {
-
-		.left, .right {
-			width: 45%;
-		}
-
-		.left {
-			/*text-align: right;*/
-			margin-left: 5%;
-			padding: 1% 3%;
-			border-bottom: none;
-			border-right: 1px solid color("light-blue", "lighten-4");
-			margin-bottom: 0;
-
-			h4 {
-				text-align: right;
-			}
-		}
-
-		.right {
-			padding-left: 2%;
-		}
-	}
-}
-
-@media screen and (min-width: $large-screen) {
-	footer {
-		padding: 4% 4% 2% 4%;
-
-		.left, .right {
-			width: 35%;
-		}
-
-		.left {
-			margin-left: 15%;
-		}
-	}
-}
-
-@media screen and (min-width: $very-large-screen) {
-	footer {
-		padding: 3% 3% 1% 3%;
-
-		.right {
-			padding-top: 5px;
-		}
-	}
-}
-
-footer {
-	/*background-color: color("blue-grey", "darken-4");
-	background: -webkit-radial-gradient(center top, lighten(color("blue-grey", "darken-4"), 5%), color("blue-grey", "darken-4"));
-	background: -moz-radial-gradient(center top, lighten(color("blue-grey", "darken-4"), 5%), color("blue-grey", "darken-4"));
-	background: radial-gradient(center top, lighten(color("blue-grey", "darken-4"), 5%), color("blue-grey", "darken-4"));*/
 	background: $secondary-color;
 	background: -webkit-radial-gradient(center top, lighten($secondary-color, 20%), $secondary-color);
 	background: -moz-radial-gradient(center top, lighten($secondary-color, 20%), $secondary-color);
@@ -95,12 +9,21 @@ footer {
 	color: #fff;
 	font-size: 20px;
 
-	h2 {
-		color: #fff;
-	}
-
 	h4 {
 		color: color("light-blue", "darken-3");
+	}
+
+	.tel, .mail {
+		display: none;
+	}
+
+	
+
+	.left {
+		border-bottom: 1px solid color("light-blue", "lighten-4");
+		padding-bottom: 2%;
+		margin-bottom: 1%;
+		text-align: justify;
 	}
 
 	.copyright {
@@ -113,7 +36,8 @@ footer {
 		}
 	}
 
-	ul {
+	ul.right {
+		padding: 1% 0;
 		margin: 20px 0 0 0;
 
 		li span, li a {
@@ -124,6 +48,16 @@ footer {
 				margin-right: 20px;
 				color: color("light-blue", "darken-2");
 			}
+		}
+
+		.mail, .mail-link {
+			a, span {
+				padding-left: 12px;
+			}
+		}
+
+		.contact {
+			margin-bottom: 20px;
 		}
 	}
 
@@ -151,3 +85,69 @@ footer {
 		}
 	}
 }
+
+
+@media screen and (min-width: $small-screen) {
+	footer {
+		padding: 5% 5% 3% 5%;
+
+		.tel, .mail {
+			display: block;
+		}
+
+		.tel-link, .mail-link {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: $medium-screen) {
+	footer {
+
+		.left, .right {
+			width: 45%;
+		}
+
+		.left {
+			margin-left: 5%;
+			padding: 1% 5%;
+			border-bottom: none;
+			border-right: 1px solid color("light-blue", "lighten-4");
+			margin-bottom: 0;
+		}
+
+		ul.right {
+			padding-left: 4%;
+			margin-top: 0;
+		}
+	}
+}
+
+@media screen and (min-width: $large-screen) {
+	footer {
+		padding: 4% 4% 2% 4%;
+
+		.left, ul.right {
+			width: 40%;
+		}
+
+		.left {
+			margin-left: 10%;
+		}
+	}
+}
+
+@media screen and (min-width: $very-large-screen) {
+	footer {
+		padding: 3% 3% 1% 3%;
+
+		.left {
+			padding: 1% 3%;
+		}
+
+		ul.right {
+			padding-left: 2%;
+		}
+	}
+}
+
