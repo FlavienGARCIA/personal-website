@@ -36,7 +36,8 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				SUBTITLE_3: 'Notions avancées',
 				SUBTITLE_4: 'Autres',
 				PHOTO_SKILL: 'Photographie avec DSLR Canon',
-				ENGLISH_SKILL: 'Anglais (lu, écrit et compréhension orale)'
+				ENGLISH_SKILL: 'Anglais (lu, écrit et compréhension orale)',
+				WORKFLOW: 'Grâce également à des outils comme <strong>Github</strong>, <strong>Sublime Text</strong> et <strong>Gulp</strong>, je dispose d\'un workflow efficace et optimisé facilitant la maintenance et la lisibilité du code.'
 			},
 			FOOTER: {
 				TITLE: 'A propos'
@@ -67,7 +68,8 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider', '$transla
 				SUBTITLE_3: 'Advanced notions',
 				SUBTITLE_4: 'Others',
 				PHOTO_SKILL: 'Canon DSLR photography',
-				ENGLISH_SKILL: 'English (reading, writing and listening comprehension)'
+				ENGLISH_SKILL: 'English (reading, writing and listening comprehension)',
+				WORKFLOW: ''
 			},
 			FOOTER: {
 				TITLE: 'About'

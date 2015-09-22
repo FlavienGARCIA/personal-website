@@ -1672,6 +1672,8 @@
       .bio .description {
         text-align: center;
         font-size: 24px; } }
+  .bio .workflow {
+    margin-top: 40px; }
   .bio .skills-wrap {
     max-width: 1280px;
     margin: 0 auto; }
